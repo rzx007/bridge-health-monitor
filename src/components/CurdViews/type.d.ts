@@ -19,7 +19,7 @@ interface Icolumns {
   headerSlot?: string
   show?: boolean
   align?: string
-  enum?: Array<any>
+  enum?: Array<{ id: number | string; value: any; type?: string }>
   childrens?: Array<Icolumns>
   width?: number
   minWidth?: string

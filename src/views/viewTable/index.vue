@@ -21,6 +21,7 @@
 
 <script lang="ts">
 import CurdView from '@/components/CurdViews/index.vue'
+import { IformItem, ItableProps } from '@/components/CurdViews/type'
 import { defineComponent } from 'vue'
 const tableOptions: ItableProps = {
   pageSize: 20,
@@ -45,7 +46,7 @@ const tableOptions: ItableProps = {
     { label: 'Action', slot: 'action', width: 150, align: 'center' }
   ]
 }
-const fromOptions: formItem[] = [
+const fromOptions: IformItem[] = [
   { name: 'description', label: '角色描述', span: 6, type: 'text' },
   {
     name: 'occurTime',
