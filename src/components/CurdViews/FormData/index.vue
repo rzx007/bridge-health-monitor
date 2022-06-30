@@ -109,10 +109,10 @@
               <el-form-item :key="item.name" class="from_item" :label="item.label" :prop="item.name">
                 <el-input v-model="formData[item.name]" :disabled="item.disabled" :type="item.type" :placeholder="getPlaceholder(item)">
                   <template v-if="item.append" #append>
-                    <slot :name="item.append" :formData="{ data: formData, key: item.name }"></slot>
+                    <slot :name="item.append" :form-data="{ data: formData, key: item.name }"></slot>
                   </template>
                   <template v-if="item.prepend" #prepend>
-                    <slot :name="item.prepend" :formData="{ data: formData, key: item.name }"></slot>
+                    <slot :name="item.prepend" :form-data="{ data: formData, key: item.name }"></slot>
                   </template>
                 </el-input>
               </el-form-item>
@@ -123,10 +123,10 @@
               <el-form-item :key="item.name" class="from_item" :label="item.label" :prop="item.name">
                 <el-input v-model="formData[item.name]" :disabled="item.disabled" :type="item.type" :placeholder="getPlaceholder(item)">
                   <template v-if="item.append" #append>
-                    <slot :name="item.append" :formData="{ data: formData, key: item.name }"></slot>
+                    <slot :name="item.append" :form-data="{ data: formData, key: item.name }"></slot>
                   </template>
                   <template v-if="item.prepend" #prepend>
-                    <slot :name="item.prepend" :formData="{ data: formData, key: item.name }"></slot>
+                    <slot :name="item.prepend" :form-data="{ data: formData, key: item.name }"></slot>
                   </template>
                 </el-input>
               </el-form-item>

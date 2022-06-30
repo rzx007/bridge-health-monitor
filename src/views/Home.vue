@@ -1,8 +1,16 @@
 <template>
   <div>
-    <CurdView :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd"> </CurdView>
+    <CurdView :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd">
+      <template #panel>
+        <el-button type="primary" @click="close1 = true">查看结果</el-button>
+        <el-button type="primary">历史比对</el-button>
+      </template>
+    </CurdView>
     <Overlay v-model="close" title="添加巡检计划">
       <FormData v-bind="fromDataOptions" :before-submit="beforeSubmit"></FormData>
+    </Overlay>
+    <Overlay v-model="close1" size="large" title="结果展示" oheight="80vh">
+      <ResultList></ResultList>
     </Overlay>
   </div>
 </template>
@@ -13,6 +21,7 @@ import { reactive, ref } from 'vue'
 import Overlay from '@/components/Overlay/index.vue'
 import { IformItem, ItableProps } from '@/components/CurdViews/type'
 const close = ref<boolean>(false)
+const close1 = ref<boolean>(false)
 const tableOptions = reactive<ItableProps>({
   pageSize: 20,
   showPanelTool: true,
@@ -27,7 +36,8 @@ const tableOptions = reactive<ItableProps>({
     { label: '执行人', prop: 'proflies', align: 'center' },
     { label: '开始日期', prop: 'operation', align: 'center' },
     { label: '结束日期', prop: 'operation', align: 'center' },
-    { label: '状态', slot: 'status', width: 150, align: 'center', enum: [{ id: 1, value: '已发布' }] }
+    { label: '状态', prop: 'status', width: 150, align: 'center', enum: [{ id: 1, value: '已发布' }] },
+    { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
   ]
 })
 const fromOptions = reactive<IformItem[]>([

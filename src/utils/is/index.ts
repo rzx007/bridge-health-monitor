@@ -1,5 +1,10 @@
 const toString = Object.prototype.toString
-
+/**
+ * @description: 是否为空对象
+ */
+export function isEmptyObject(obj: object): boolean {
+  return Object.keys(obj).length === 0
+}
 /**
  * @description: 判断值是否未某个类型
  */

@@ -57,6 +57,7 @@ declare module 'vue' {
     Loading: typeof import('element-plus/es')['ElLoadingDirective']
     Overlay: typeof import('./src/components/Overlay/index.vue')['default']
     Propover: typeof import('./src/components/Propover/index.vue')['default']
+    ResultList: typeof import('./src/components/CurdViews/ResultList/index.vue')['default']
     Toasts: typeof import('./src/components/Toasts/toasts.vue')['default']
     Tree: typeof import('./src/components/CurdViews/Tree/Tree.vue')['default']
   }

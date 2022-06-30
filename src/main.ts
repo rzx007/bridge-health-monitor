@@ -8,12 +8,12 @@ import directives from './directive'
 // 安装toasts
 import toasts from './components/Toasts'
 import RegisterIcons from './icons/index'
-import { setStorge } from './utils/auth'
-setStorge('token', '2321314dqdqf21')
+import { getBaseToken } from './config/getBaseToken'
 const app = createApp(App)
 
 getServerConfig(app).then(async (config) => {
   //  在默认配置加载后挂在应用实例
+  const isLogin = await getBaseToken()
   RegisterIcons(app)
   app.use(toasts)
   // app.use(ElementPlus, { size: "small", zIndex: 3000, locale: zhCn });
