@@ -1,12 +1,12 @@
-import { reactive, Ref, ref } from 'vue'
+import { reactive, Ref, ref, unref } from 'vue'
 import { http } from '@/utils/http'
 import { defaultTableData } from '../enums'
 export function useTableFetchData(props, emit: (arg0: string, arg1: any[] | Ref<any[]>) => void, selection: Ref<any[]>) {
   const loading = ref<boolean>(false)
   const tableData = ref<any[]>(defaultTableData)
-  const pageParam = reactive<{ pageSize: number; pageIndex: number }>({
+  const pageParam = reactive<{ pageSize: number; pageNo: number }>({
     pageSize: 20,
-    pageIndex: 1
+    pageNo: 1
   })
   const total = ref<number>(0)
   const lazyLoad = ref<boolean>(props.lazy)
@@ -24,16 +24,16 @@ export function useTableFetchData(props, emit: (arg0: string, arg1: any[] | Ref<
       loading.value = true
       const params = props.showPage
         ? Object.assign({}, JSON.parse(JSON.stringify(pageParam)), props.params, {
-            pageIndex: (pageParam.pageIndex - 1) * pageParam.pageSize
-          })
+          pageNo: (pageParam.pageNo - 1) * pageParam.pageSize
+        })
         : props.params
       http
-        .get<any>(props.dataUrl, params)
+        .post<any>(props.dataUrl, params)
         .then((res) => {
           loading.value = false
-          if (res.code === 1) {
+          if (res.code === 0) {
             let data = res.data
-            total.value = res.pojoTotalCount
+            total.value = res.data.count
             if (props.responseName) {
               if (Array.isArray(props.responseName)) {
                 props.responseName.forEach((item) => {

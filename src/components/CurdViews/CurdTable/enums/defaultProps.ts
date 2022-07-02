@@ -5,7 +5,7 @@ export const defaulltProps = {
   defaultPanel: () => ['add', 'edit', 'delete', 'export'],
   pageAlign: 'right',
   pageSize: 20,
-  pageIndex: 1,
+  pageNo: 1,
   showSettingToolbar: true,
   showPage: true,
   highlightCurrentRow: false,

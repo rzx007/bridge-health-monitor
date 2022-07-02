@@ -12,7 +12,7 @@ export const defaultProps = {
   pageSize: {
     default: 20
   },
-  pageIndex: {
+  pageNo: {
     default: 1
   },
   showSettingToolbar: {

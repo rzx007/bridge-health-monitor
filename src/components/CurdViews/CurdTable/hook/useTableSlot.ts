@@ -1,12 +1,5 @@
-/*
- * @Author: 阮志雄
- * @Date: 2021-11-24 11:09:55
- * @LastEditTime: 2021-11-24 13:52:45
- * @LastEditors: 阮志雄
- * @Description: In User Settings Edit
- * @FilePath: \vue3-template-with-ts\src\components\CurdViews\CurdTable\hook\useTableSlot.ts
- */
 import { Ref, ref } from 'vue'
+import { Icolumns } from '../../type'
 export function useTableSlot(mColumns: Ref<Icolumns[]>) {
   const slotArr = ref<Array<any>>([])
   const Columns = mColumns.value

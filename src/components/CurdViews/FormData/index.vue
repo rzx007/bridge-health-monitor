@@ -149,6 +149,8 @@ import { ref, toRaw, watch } from 'vue'
 import { usePlaceholder } from './hook/usePlaceholder'
 import { useDefaultData } from './hook/useDefaultData'
 import { ElMessage } from 'element-plus'
+import 'element-plus/es/components/message/style/css'
+
 import qs from 'qs'
 const ruleForm = ref(null)
 const fromItems = ref<Array<any>>([])
@@ -186,6 +188,7 @@ const emit = defineEmits(['submit', 'from-change'])
 // 初始化赋值
 fromItems.value = toRaw(props.formItem)
 const { getPlaceholder } = usePlaceholder(props)
+// @ts-ignore
 const { formData, rules, invaildArr } = useDefaultData(props)
 
 // 提交
@@ -206,9 +209,9 @@ const submitForm = async (formEl) => {
         const params = props.contentType === 'json' ? formDatas : qs.stringify(formDatas)
         const headers = props.contentType === 'form-data' ? { headers: { 'content-type': 'application/x-www-form-urlencoded' } } : {}
         http.request<{ data: any; code: number }>('post', props.postUrl, params, headers).then((res) => {
-          if (res.code === 1) {
-            emit('submit', formDatas, res.data)
+          if (res.code === 0) {
             ElMessage.success('已提交')
+            emit('submit', formDatas, res.data)
           } else {
             ElMessage.error('提交异常')
           }

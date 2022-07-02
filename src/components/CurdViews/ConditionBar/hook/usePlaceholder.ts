@@ -1,4 +1,4 @@
-export const usePlaceholder = (item: formItem) => {
+export const usePlaceholder = (item: IformItem) => {
   if (item.label) {
     return item.label
   }

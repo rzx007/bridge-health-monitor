@@ -1,11 +1,12 @@
 /*
  * @Author: 阮志雄
  * @Date: 2021-10-31 02:16:09
- * @LastEditTime: 2022-03-23 14:02:10
+ * @LastEditTime: 2022-07-02 14:59:35
  * @LastEditors: 阮志雄
  * @Description: In User Settings Edit
- * @FilePath: \vue3-template-with-ts\types\globals.d.ts
+ * @FilePath: \bridge-health-monitor\types\globals.d.ts
  */
+import { IDatePickerType } from 'element-plus/es/components/date-picker/src/date-picker.type'
 interface ServerConfigs {
   Version?: string
   Title?: string
@@ -53,4 +54,18 @@ declare interface IGiftInfo {
 
 declare interface Fn<T = any, R = T> {
   (...arg: T[]): R
+}
+interface IformItem {
+  name: string // key值
+  label: string // label 名称
+  type?: string // 条件类型
+  default?: any // 默认值
+  disabled?: boolean // 是否禁用
+  disabledAll?: boolean // 是否禁用'全部'按钮
+  options?: Array<{ label: string; value: any }>
+  format?: string
+  remoteMethod?: Promise<any>
+  dateSwitch?: Array<{ type: IDatePickerType; typeName: string }>
+  dateTypeParamName?: string
+  [key: string]: any
 }

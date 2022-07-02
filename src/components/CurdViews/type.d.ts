@@ -41,10 +41,10 @@ interface ItableProps {
   tableData?: Array<any>
   tableSize?: string
   mode?: string
-  defaultPanel?: Array<string>
+  defaultPanel?: Array<any>
   pageAlign?: string
   pageSize?: number
-  pageIndex?: number
+  pageNo?: number
   showSettingToolbar?: boolean
   showPage?: boolean
   highlightCurrentRow?: boolean

@@ -10,7 +10,7 @@ function setDifAuthority(authority, routes) {
 
 export default [
   {
-    url: '/api/getAsyncRoutes',
+    url: '/mock/api/getAsyncRoutes',
     method: 'get',
     response: ({ query }) => {
       return {

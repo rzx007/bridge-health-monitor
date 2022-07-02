@@ -12,5 +12,14 @@ export const getGiftlist = (params: any): Promise<IRes<IGiftInfo>> => {
 }
 
 export const getAsyncRoutes = (data?: object) => {
-  return http.request<{ list: Array<IrouteItem>; code: number }>('get', '/getAsyncRoutes', data)
+  return http.request<{ list: Array<IrouteItem>; code: number }>('get', '/mock/api/getAsyncRoutes', data)
+}
+
+export const loginByyUsername = (params: { account: string; pwd: string }): Promise<any> => {
+  return http.post('http://183.66.148.62:5001/Home/Login', params)
+}
+// 获取用户列表
+export const getUserList = (): Promise<any> => {
+  const param = { account: sessionStorage.getItem('userName'), token: sessionStorage.getItem('token') }
+  return http.get('http://183.66.148.62:5001/Home/GetUsers', param, { parallel: true })
 }

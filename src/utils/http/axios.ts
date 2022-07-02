@@ -1,8 +1,9 @@
-import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, CancelTokenStatic, Canceler, AxiosError, Method } from 'axios'
-import { genConfig } from './config'
+import axios, { AxiosInstance, AxiosResponse, CancelTokenStatic, Canceler, AxiosError, Method } from 'axios'
+import { genConfig, RequestConfig } from './config'
 import { transformConfigByMethod } from './utils'
 import { httpStatus } from './httpStatus'
 import { ElMessage } from 'element-plus'
+import 'element-plus/es/components/message/style/css'
 
 type cancelTokenItem = {
   cancelKey: string
@@ -26,7 +27,7 @@ class FetchHttp {
   private currentCabcelToken = ''
 
   // 每次请求设置唯一标识
-  private static setCancelTokenString(config: AxiosRequestConfig): string {
+  private static setCancelTokenString(config: RequestConfig): string {
     return `${config.url}&&${JSON.stringify(config.params)}&&${config.data}`
   }
   // 清除唯一标识
@@ -51,17 +52,21 @@ class FetchHttp {
   // 请求拦截器
   private interceptorsRequest(): void {
     FetchHttp.axiosInstance.interceptors.request.use(
-      (config: AxiosRequestConfig) => {
+      (config: RequestConfig) => {
         const _config = config
-        // 1.设置一个请求标识
-        const cancelKey = FetchHttp.setCancelTokenString(_config)
-        this.currentCabcelToken = cancelKey
+        if (!_config.parallel) {
+          // 某些情况下需要并行
+          // 1.设置一个请求标识
+          const cancelKey = FetchHttp.setCancelTokenString(_config)
+          this.currentCabcelToken = cancelKey
 
-        // 2.通过axios.CancelToken构造函数生成取消函数
-        _config.cancelToken = new this.CancelToken((cancelHandler: Canceler) => {
-          this.sourceTokenList.push({ cancelKey, cancelHandler })
-        })
-        this.cancelRepeatRequest()
+          // 2.通过axios.CancelToken构造函数生成取消函数
+          _config.cancelToken = new this.CancelToken((cancelHandler: Canceler) => {
+            this.sourceTokenList.push({ cancelKey, cancelHandler })
+          })
+          this.cancelRepeatRequest()
+        }
+
         return _config
       },
       (error: AxiosError) => {
@@ -79,6 +84,10 @@ class FetchHttp {
         const cancelKey = FetchHttp.setCancelTokenString(_config)
         this.deleteCancelTokenString(cancelKey)
         this.currentCabcelToken = ''
+        if (response.headers['content-disposition']) {
+          //判断文件下载
+          return response
+        }
         return response.data
       },
       (error: FetchHttppError) => {
@@ -105,17 +114,17 @@ class FetchHttp {
   }
 
   // 封装请求
-  public request<T>(method: Method, url: string, param?: any, axiosConfig?: AxiosRequestConfig): Promise<T> {
+  public request<T>(method: Method, url: string, param?: any, axiosConfig?: RequestConfig): Promise<T> {
     const config = transformConfigByMethod(param, {
       method,
       url,
       ...axiosConfig
-    } as AxiosRequestConfig)
+    } as RequestConfig)
     // 单独处理自定义请求/响应回掉
     return new Promise((resolve, reject) => {
       FetchHttp.axiosInstance
-        .request(config)
-        .then((response: undefined) => {
+        .request<any, T>(config)
+        .then((response) => {
           resolve(response)
         })
         .catch((error: any) => {
@@ -123,11 +132,11 @@ class FetchHttp {
         })
     })
   }
-  public post<T>(url: string, params?: any, config?: AxiosRequestConfig): Promise<T> {
+  public post<T>(url: string, params?: any, config?: RequestConfig): Promise<T> {
     return this.request<T>('post', url, params, config)
   }
 
-  public get<T>(url: string, params?: any, config?: AxiosRequestConfig): Promise<T> {
+  public get<T>(url: string, params?: any, config?: RequestConfig): Promise<T> {
     return this.request<T>('get', url, params, config)
   }
 }

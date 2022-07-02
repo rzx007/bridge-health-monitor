@@ -3,16 +3,14 @@
     <div v-if="props.showPanelTool && props.mode !== 'simple'" class="panel_tool_left">
       <el-button v-if="props.defaultPanel.includes('add')" icon="plus" type="primary" @click="addRow()">新增</el-button>
       <el-button v-if="props.defaultPanel.includes('edit')" icon="edit" type="primary" :disabled="isSingle" @click="editRow()">修改</el-button>
-      <el-popover v-model:visible="visible" placement="top" :width="160">
+      <el-popover v-if="props.defaultPanel.includes('delete')" v-model:visible="visible" placement="top" :width="160">
         <p>确定删除吗？</p>
         <div style="text-align: right; margin: 0">
           <el-button type="text" @click="visible = false">取消</el-button>
           <el-button type="primary" @click="deleteRows()">确定</el-button>
         </div>
         <template #reference>
-          <el-button v-if="props.defaultPanel.includes('delete')" icon="circle-close" type="danger" :disabled="isMultiple" @click="visible = true"
-            >删除</el-button
-          >
+          <el-button icon="circle-close" type="danger" :disabled="isMultiple" @click="visible = true">删除</el-button>
         </template>
       </el-popover>
       <el-button v-if="props.defaultPanel.includes('export')" icon="download" type="primary" @click="exportData()">导出</el-button>
@@ -48,7 +46,7 @@
         :summary-method="props.summaryMethod"
         :span-method="props.spanMethod"
         :page-size="pageParam.pageSize"
-        :page-index="pageParam.pageIndex"
+        :page-index="pageParam.pageNo"
         :show-page="props.showPage"
         :highlight-current-row="props.highlightCurrentRow"
         style="width: 100%"
@@ -64,7 +62,7 @@
           <slot :name="item.headerSlot" v-bind="Props"></slot>
         </template>
         <template #index="Props">
-          <slot v-if="props.showPage" name="index">{{ Props.index + (pageParam.pageIndex - 1) * pageParam.pageSize + 1 }}</slot>
+          <slot v-if="props.showPage" name="index">{{ Props.index + (pageParam.pageNo - 1) * pageParam.pageSize + 1 }}</slot>
           <slot v-else name="index">{{ Props.index + 1 }}</slot>
         </template>
       </DataTable>
@@ -75,7 +73,7 @@
           :total="total"
           :page-sizes="[20, 40, 80, 100]"
           :page-size="pageParam.pageSize"
-          :current-page="pageParam.pageIndex"
+          :current-page="pageParam.pageNo"
           small
           layout="total, sizes, prev, pager, next"
           background
@@ -113,11 +111,11 @@ const { queryData, loading, tableData, pageParam, total, lazyLoad } = useTableFe
 const { exportData } = useExportTable(props)
 
 const changePage = (page: number) => {
-  pageParam.pageIndex = page
+  pageParam.pageNo = page
   queryData()
 }
 const changePageSize = (limit: number) => {
-  pageParam.pageIndex = 1
+  pageParam.pageNo = 1
   pageParam.pageSize = limit
   queryData()
 }
@@ -158,7 +156,7 @@ const columnsChange = () => {
 // 初始化
 if (!props.showPage) {
   delete pageParam.pageSize
-  delete pageParam.pageIndex
+  delete pageParam.pageNo
 }
 const { slotArr } = useTableSlot(mColumns)
 const { headerSlotArr } = useTableHeaderSlot(mColumns)
@@ -174,7 +172,7 @@ watch(
   () => props.params,
   (_curVal, _oldVal) => {
     if (props.showPage) {
-      pageParam.pageIndex = 1
+      pageParam.pageNo = 1
     }
     if (!lazyLoad.value) {
       queryData()
@@ -193,7 +191,7 @@ watch(
   () => props.dataUrl,
   (_curVal, _oldVal) => {
     if (props.showPage) {
-      pageParam.pageIndex = 1
+      pageParam.pageNo = 1
     }
     // queryData()
   }
@@ -216,10 +214,10 @@ interface ItableProp {
   tableData?: Array<any>
   tableSize?: string
   mode?: string
-  defaultPanel?: Array<string>
+  defaultPanel?: Array<any>
   pageAlign?: string
   pageSize?: number
-  pageIndex?: number
+  pageNo?: number
   showSettingToolbar?: boolean
   showPage?: boolean
   highlightCurrentRow?: boolean

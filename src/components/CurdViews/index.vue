@@ -108,6 +108,7 @@ import { CurdTable } from './CurdTable'
 import { ConditionBar } from './ConditionBar'
 import { emits } from './CurdTable/enums'
 import { reactive, ref } from 'vue'
+import { ItableProps, ItreeProps } from './type'
 
 const tableView = ref(null)
 const toggle = ref<boolean>(false)
@@ -117,7 +118,7 @@ const headerSlotArr = ref<Array<any>>([])
 interface IcurdView {
   treeOptions?: ItreeProps
   tableOptions?: ItableProps
-  fromOptions?: Array<formItem>
+  fromOptions?: Array<IformItem>
   fromWidth?: string
   showSearchDynamic?: boolean
 }

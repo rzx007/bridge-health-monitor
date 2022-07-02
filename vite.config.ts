@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { configMockPlugin } from './build/configMockPlugin'
 import { configHtmlPlugin } from './build/configHtmlPlugin'
 import path from 'path'
+import { viteMockServe } from 'vite-plugin-mock'
 
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -15,6 +16,8 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
   const root = process.cwd()
   // console.log(loadEnv(mode, process.cwd())); // 获取当前环境的.nev.${mode}的值
   const { VITE_PORT, VITE_PUBLIC_PATH, VITE_PROXY } = loadEnv(mode, root)
+  console.log(VITE_PROXY);
+  
   return {
     plugins: [
       vue(),
@@ -28,7 +31,10 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
         dirs: ['src/components'],
         deep: true,
         resolvers: [ElementPlusResolver()]
-      })
+      }),
+      viteMockServe({
+        localEnabled: true,
+      }),
     ],
     base: isBuild ? './' : VITE_PUBLIC_PATH,
     server: {
@@ -36,10 +42,9 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
       host: '0.0.0.0',
       open: true,
       proxy: {
-        '/api': {
+        '/bridge': {
           target: VITE_PROXY, // 目标地址
           changeOrigin: true, // 设置同源 默认false，是否需要改变原始主机头为目标URL,
-          rewrite: (path) => path.replace(/^\/api/, '')
         }
       }
     },

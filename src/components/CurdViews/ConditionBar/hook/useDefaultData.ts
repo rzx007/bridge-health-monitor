@@ -6,7 +6,7 @@ export const useDefaultData = (props) => {
   const typeArr: Array<string> = ['date', 'daterange', 'datetime', 'datetimerange', 'year', 'month', 'time', 'timerange']
 
   if (props.fromOptions.length) {
-    props.fromOptions.forEach((item: formItem) => {
+    props.fromOptions.forEach((item: IformItem) => {
       for (const key in item) {
         if (key === 'name') {
           const str = item[key]
