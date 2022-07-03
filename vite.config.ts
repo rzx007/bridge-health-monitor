@@ -17,7 +17,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
   // console.log(loadEnv(mode, process.cwd())); // 获取当前环境的.nev.${mode}的值
   const { VITE_PORT, VITE_PUBLIC_PATH, VITE_PROXY } = loadEnv(mode, root)
   console.log(VITE_PROXY);
-  
+
   return {
     plugins: [
       vue(),
@@ -34,6 +34,12 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
       }),
       viteMockServe({
         localEnabled: true,
+        prodEnabled: true,
+        //  这样可以控制关闭mock的时候不让mock打包到最终代码内
+        injectCode: `
+          import { setupProdMockServer } from '../mockProdServer';
+          setupProdMockServer();
+        `,
       }),
     ],
     base: isBuild ? './' : VITE_PUBLIC_PATH,

@@ -2,7 +2,7 @@ import axios from 'axios'
 import { getUrlParamsToObj } from '@/utils/urlUtils'
 import { isEmptyObject } from '@/utils/is'
 export const getBaseToken = () => {
-  if (!import.meta.env.PROD) {
+  if (import.meta.env.PROD || import.meta.env.DEV) {
     return axios
       .get<{ StatusCode: number; UserName: string; Token: string; ID: number }>('http://183.66.148.62:5001/Home/Login?account=巡检测试&pwd=xjcs2022')
       .then((res) => {

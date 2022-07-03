@@ -11,10 +11,20 @@ const routes: Array<RouteConfig> = [
     name: 'Main',
     component: Main,
     hidden: false, // 拓展路由属性
+    redirect: '/home',
     meta: {
       title: '首页'
     },
-    children: []
+    children: [
+      {
+        path: '/home',
+        name: 'home',
+        component: () => import('../views/Home.vue'),
+        meta: {
+          title: '登录'
+        }
+      }
+    ]
   },
   {
     path: '/redirect',
@@ -57,36 +67,6 @@ const router = createRouter({
       }
     })
   }
-})
-
-let asyncRouterFlag = 0
-router.beforeEach(async (to: RouteLocationNormalized, from, next) => {
-  Nprogress.start()
-  //to即将进入的目标路由对象，from当前导航正要离开的路由， next  :  下一步执行的函数钩子
-  if (to.path === '/login') {
-    next()
-  } else if (!getStorge('token')) {
-    //如果不需要登录验证，或者已经登录成功，则直接放行
-    //进入的不是登录路由
-    next({ path: '/login' })
-  } else {
-    //下一跳路由需要登录验证，并且还未登录，则路由定向到  登录路由
-    if (to.meta.title) {
-      document.title = to.meta.title
-    }
-    // 添加flag防止多次获取动态路由和栈溢出
-    if (!asyncRouterFlag && store.getters.routes.length === 0) {
-      asyncRouterFlag++
-      await store.dispatch('GetUserMenu')
-      next({ ...to, replace: true })
-    } else {
-      next()
-    }
-  }
-})
-router.afterEach(() => {
-  //...
-  Nprogress.done()
 })
 
 export default router

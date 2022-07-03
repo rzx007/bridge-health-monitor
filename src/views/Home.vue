@@ -1,6 +1,18 @@
 <template>
   <div>
     <CurdView :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd">
+      <template #ltool>
+        <div class="panel_content">
+          <span class="right" style="display: inline-block">
+            <p class="midd">
+              最近巡检桥梁得分: <el-tag :type="score > 60 ? 'success' : 'danger'">{{ score }}</el-tag>
+            </p>
+            <p class="midd">
+              巡检时间: <el-tag>{{ lastTime }}</el-tag>
+            </p>
+          </span>
+        </div>
+      </template>
       <template #oprated="{ row }">
         <el-button v-if="row.state === 1" type="text" @click="getTaskResultMethod(row.id)">查看结果</el-button>
         <el-button v-if="row.state === 1" type="text" @click="getTaskResultDetailMethod(row.id)">查看问题详情</el-button>
@@ -31,7 +43,7 @@ import { reactive, ref } from 'vue'
 import Overlay from '@/components/Overlay/index.vue'
 import taskDetail from './Home/widgets/taskDetail.vue'
 import { IformItem, ItableProps } from '@/components/CurdViews/type'
-import { getUserList, getTaskResult, getTaskResultDetail } from '@/api'
+import { getUserList, getTaskResult, getTaskResultDetail, getLastTaskResult } from '@/api'
 import { useTaskresult } from './Home/hooks/useTaskresult'
 
 const close = ref<boolean>(false)
@@ -200,5 +212,28 @@ const getTaskResultDetailMethod = (taskId: string) => {
     close2.value = true
   })
 }
+const score = ref<number>(0)
+const lastTime = ref<string>('')
+getLastTaskResult().then((res) => {
+  console.log(res)
+})
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.panel_content {
+  float: right;
+  vertical-align: middle;
+  .left {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-right: 12px;
+  }
+  .right {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    .midd {
+      margin-bottom: 10px;
+    }
+  }
+}
+</style>

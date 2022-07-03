@@ -1,3 +1,3 @@
 window.api = {
-  baseUrl: 'localhost'
+  baseUrl: 'http://47.111.138.9'
 }

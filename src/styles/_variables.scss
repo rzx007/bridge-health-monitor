@@ -78,3 +78,7 @@ $box-shadow-theme5: 4px 4px 16px rgba(75, 102, 171, 0.2);
 @function box-shadow-theme4($lightness) {
   @return rgba(128, 128, 128, 0.3) 0px 0px $lightness inset;
 }
+
+:root {
+  --el-color-primary: green;
+}

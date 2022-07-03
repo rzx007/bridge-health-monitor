@@ -32,3 +32,7 @@ export const getTaskResult = (params: { taskId: string }): Promise<any> => {
 export const getTaskResultDetail = (params: { taskId: string }): Promise<any> => {
   return http.post('/bridge/taskInfo/taskProblem', params, { parallel: true })
 }
+// 最近一次任务检查结果
+export const getLastTaskResult = (): Promise<any> => {
+  return http.post('/bridge/taskInfo/latelyTask')
+}

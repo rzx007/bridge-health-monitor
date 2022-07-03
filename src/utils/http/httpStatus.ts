@@ -41,6 +41,6 @@ export function httpStatus(status: number, msg: string, message: any): void {
       message.error('http版本不支持该请求!')
       break
     default:
-      message.error(msg)
+      message.error('未知错误!')
   }
 }
