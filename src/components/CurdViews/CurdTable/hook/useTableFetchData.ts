@@ -24,8 +24,8 @@ export function useTableFetchData(props, emit: (arg0: string, arg1: any[] | Ref<
       loading.value = true
       const params = props.showPage
         ? Object.assign({}, JSON.parse(JSON.stringify(pageParam)), props.params, {
-          pageNo: (pageParam.pageNo - 1) * pageParam.pageSize
-        })
+            pageNo: (pageParam.pageNo - 1) * pageParam.pageSize
+          })
         : props.params
       http
         .post<any>(props.dataUrl, params)

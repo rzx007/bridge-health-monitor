@@ -1,9 +1,10 @@
 <template>
   <div>
     <CurdView :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd">
-      <template #oprated>
-        <el-button type="primary" @click="close1 = true">查看结果</el-button>
-        <el-button type="primary">历史比对</el-button>
+      <template #oprated="{ row }">
+        <el-button v-if="row.state === 1" type="text" @click="getTaskResultMethod(row.id)">查看结果</el-button>
+        <el-button v-if="row.state === 1" type="text" @click="getTaskResultDetailMethod(row.id)">查看问题详情</el-button>
+        <span v-else>-</span>
       </template>
       <template #releaseUser="{ row }">
         <span>{{ findUserById(row.executeUser) }}</span>
@@ -15,8 +16,11 @@
     <Overlay v-model="close" title="添加巡检计划">
       <FormData v-bind="fromDataOptions" :before-submit="beforeSubmit" @submit="close = false"></FormData>
     </Overlay>
-    <Overlay v-model="close1" size="large" title="结果展示" oheight="80vh">
-      <ResultList></ResultList>
+    <Overlay v-model="close1" title="结果展示" oheight="80vh">
+      <ResultList :data="resultArr" :default-props="{ title: 'componentName', label: 'evaluateName', value: 'describe' }"></ResultList>
+    </Overlay>
+    <Overlay v-model="close2" title="问题详情" oheight="60vh">
+      <taskDetail :task-list="taskArr"></taskDetail>
     </Overlay>
   </div>
 </template>
@@ -25,10 +29,15 @@
 import CurdView from '@/components/CurdViews/index.vue'
 import { reactive, ref } from 'vue'
 import Overlay from '@/components/Overlay/index.vue'
+import taskDetail from './Home/widgets/taskDetail.vue'
 import { IformItem, ItableProps } from '@/components/CurdViews/type'
-import { getUserList } from '@/api'
+import { getUserList, getTaskResult, getTaskResultDetail } from '@/api'
+import { useTaskresult } from './Home/hooks/useTaskresult'
+
 const close = ref<boolean>(false)
 const close1 = ref<boolean>(false)
+const close2 = ref<boolean>(false)
+
 const tableOptions = reactive<ItableProps>({
   pageSize: 20,
   showPanelTool: true,
@@ -175,6 +184,21 @@ const findUserById = (id: number) => {
       return element.label
     }
   }
+}
+const resultArr = ref<Array<any>>([])
+const getTaskResultMethod = (taskId: string) => {
+  getTaskResult({ taskId }).then((datas) => {
+    const { resultList } = useTaskresult(datas.data)
+    resultArr.value = resultList
+    close1.value = true
+  })
+}
+const taskArr = ref<Array<any>>([])
+const getTaskResultDetailMethod = (taskId: string) => {
+  getTaskResultDetail({ taskId }).then((datas) => {
+    taskArr.value = datas.data
+    close2.value = true
+  })
 }
 </script>
 <style lang="scss"></style>

@@ -1,0 +1,3452 @@
+[
+    {
+        "componentId": 1,
+        "componentName": "斜拉索",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "拉索锈蚀、断丝",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "钢丝有极少量锈蚀",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "钢丝少量锈蚀、钢丝无断裂",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "钢丝较多锈蚀或损坏，钢丝断裂，截面出现削弱",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "钢索裸露，钢丝大量严重锈蚀或损坏，钢丝断裂，主梁出现严重变形，造成安全隐患",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "滑移变位",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "斜拉索出现异常位移变形，且无法复位",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "斜拉索异常位移变形过大，导致桥面线形、纵向位移伸缩量出现显著异常，结构振动或摇晃显著，影响结构安全",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "涂层损坏",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "涂层有轻微损坏、裂纹、起皮或剥落",
+                        "explain": "累计面积≤构件面积的10%，单处面积≤0.5㎡",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围涂层有损坏、裂纹、漆皮、剥落",
+                        "explain": "累计面积＞构建面积的10%且≤构件面积的20%，单处面积≤1.0㎡",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围涂层有损坏、裂纹、漆皮或剥落",
+                        "explain": "累计面积＞构件面积的20%，单处面积＞1.0㎡",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "护套内的材料老化变质",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "护套内的材料轻微老化，表面有脏污",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "护套内的材料老化变形",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "护套内的材料老化变形，并有破裂现象，局部还造成渗水",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "锚固区损坏",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "个别锚头或锚拉板出现轻微破损",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "个别锚头出现破损、松动或出现不密封现象，但未造成拉索锈蚀，个别锚拉板出现疲劳损伤状况",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "较多锚头或锚拉板出现破损、松动、裂缝，锚头锈蚀，锚固区有明显的受力裂缝",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "较多锚头或锚拉板出现严重破损、松动、裂缝，锚头积水锈蚀严重，锚固区有明显的手里裂缝，且缝宽＞0.2mm",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "拉索线形异常",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "拉索线形出现明显异常或异常声音",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "拉索线形出现显著异常，桥面线形出现显著异常，结构振动摇晃明显，主梁出现严重变形",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 2,
+        "componentName": "斜拉索护套",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "漆膜损坏",
+                "children": [
+                    {
+                        "describe": "各部分油漆均匀平光、完整，色泽鲜明",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "油漆变色、轻微损坏、裂纹、起皮或剥落",
+                        "explain": "累计失效面积≤构件面积的10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围涂层有轻微损坏裂纹起皮或剥落",
+                        "explain": "累计失效面积>构件面积的10%且≤构件面积的20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围涂层有轻微损坏、裂纹、起皮或剥落",
+                        "explain": "累计失效面积>构件面积的20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "护套裂缝",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "PE管或金属管轻微胀裂，未造成渗水等;或热挤PE护套轻微开裂，未造成其他影响，符合相关要求",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "PE管或金属管胀裂，出现较多纵向裂缝，造成渗水，钢丝有锈迹或护套内有氧化物，钢束截面削弱，但在规范范围内;或热挤PE护套产生环状开裂或PE层断开，造成渗水，导致钢丝锈蚀，但在规范范围内",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "PE管或金属管胀裂，出现很多纵向裂缝，渗水造成钢丝锈蚀和护套内有氧化物，钢束截面削弱超出规范范围;或热挤PE护套产生严重环状开裂或PE层断开，造成渗水，导致钢丝锈蚀超出规范范围",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "护套锈蚀",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "护套表面发生轻微锈蚀，并且少部分氧化皮或油漆层已经剥落",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "护套表面部分发生锈蚀，并且部分氧化皮或油漆层已经剥落",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "护套表面发生锈蚀，有大量点蚀现象，氧化皮或油漆层因锈蚀而部分剥落或者可以刮除",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "防护层破损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "个别防护层轻微老化或破损",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "个别防护层老化破损、松动",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "部分防护层老化，破损，烈纹或积水，造成局部渗水或锈蚀;个别护简甚至脱落",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "护套上端浆液离析",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部离析",
+                        "explain": "≤10%的浆液没有凝固",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "局部离析，浆液有流动性",
+                        "explain": "> 10%的浆液没有凝固",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "渗水",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "个别护套轻微渗水",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "个别护套明显渗水;个别渗水处伴有锈蚀",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "多处护套明显渗水，渗水处伴有锈蚀",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 3,
+        "componentName": "锚具",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "锚杯积水",
+                "children": [
+                    {
+                        "describe": "完好，锚杯无积水",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "锚杯积水较少，空气湿度较大",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "锚杯积水严重，空气湿度很大",
+                        "explain": "无",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "锚具内潮湿",
+                "children": [
+                    {
+                        "describe": "完好，空气干燥",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "锚具内有少量水汽，空气较潮湿",
+                        "explain": "湿度≤40%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "锚具内有少量水汽，空气较潮湿",
+                        "explain": "湿度>40%且≤50%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "锚具内空气潮湿，造成锚具严重锈蚀",
+                        "explain": "湿度>50%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "防锈油结块",
+                "children": [
+                    {
+                        "describe": "防锈油无结块",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "防锈油有少量结块",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "防锈油结块面积较大",
+                        "explain": "无",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "锚具锈蚀",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "个别锚具轻微锈蚀",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "部分锚具锈蚀、疲劳或损坏等，个别处有少量点蚀现象，氧化皮或油漆层因锈蚀而部分剥落或者可以刮除",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "锚具锈蚀、疲劳或损坏等严重，防护普遍开裂，并大量脱落，表面普遍有点蚀现象，氧化皮或油漆层因锈蚀而全面剥离",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 4,
+        "componentName": "减震装置",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "减震装置损坏",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "减震装置极个别处轻微损坏",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "减震装置出现较多处损坏，部分功能失效",
+                        "explain": "无",
+                        "scale": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 5,
+        "componentName": "主梁",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "剥落、露筋",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部混凝土剥落或露筋",
+                        "explain": "累计面积≤构件面积的3%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围混凝土剥落或露筋",
+                        "explain": "累计面积>构件面积的3%且≤构件面积的10% ，单处面积≤0.5m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围混凝土剥落或露筋",
+                        "explain": "累计面积>构件面积的10%，单处面积>0.5m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "混凝土裂缝",
+                "children": [
+                    {
+                        "describe": "完好，无裂缝",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状开裂",
+                        "explain": "网状裂缝:累计面积≤构件面积的20%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "竖向裂缝:少量裂缝，缝宽未超限",
+                        "explain": "竖向裂缝:缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "纵向裂缝:结合面开裂或有其他纵向裂缝",
+                        "explain": "纵向裂缝:缝长≤结合面长度或跨长的1/8 ",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "斜裂缝:少量裂缝，缝宽未超限",
+                        "explain": "斜裂缝:缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状开裂",
+                        "explain": "网状裂缝:累计面积>构件面积的20%，单处面积>0.5m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "竖向裂缝:较多裂缝，缝宽未超限",
+                        "explain": "竖向裂缝:缝长>截面尺寸的1/3且≤截面尺寸的1/2，间距≥30cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "纵向裂缝:结合面开裂或有纵向裂缝",
+                        "explain": "纵向裂缝:缝长>结合面长度或跨长的1/8且≤结合面长度或跨长的1/2",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "斜裂缝:较多裂缝，缝宽未超限",
+                        "explain": "斜裂缝:缝长>截面尺寸的1/3且≤截面尺寸的2/3",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "竖向裂缝:主梁控制截面出现大量裂缝，缝宽超限",
+                        "explain": "竖向裂缝:缝长>截面尺寸的1/2，缝宽>限值，间距< 30cm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "纵向裂缝:存在严重结合面开裂现象或有大量纵向裂缝",
+                        "explain": "纵向裂缝:缝长>结合面长或跨长的1/2",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "斜裂缝:主梁控制截面出现大量裂缝，缝宽超限值",
+                        "explain": "斜裂缝:缝长>截面尺寸的2/3 ，缝宽>限值",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "竖向裂缝:主梁控制截面出现大量裂缝，裂缝大多贯通且缝宽超限，主梁出现严重变形",
+                        "explain": "竖向裂缝:缝长>截面尺寸的1/2， 缝宽> 1. 0mm，间距< 10cm",
+                        "scale": 5
+                    },
+                    {
+                        "describe": "斜裂缝:主梁控制截面出现大量裂缝且缝宽超限，主梁出现严重变形",
+                        "explain": "斜裂缝:缝长>截面尺寸的2/3，缝宽>1.0mm",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "蜂窝、麻面",
+                "children": [
+                    {
+                        "describe": "完好，无蜂窝麻面",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "较大面积蜂窝麻面",
+                        "explain": "累计面积≤构件面积的50%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "大面积蜂窝麻面",
+                        "explain": "累计面积>构件面积的50%",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "剥落、掉角",
+                "children": [
+                    {
+                        "describe": "完好，无剥落、掉角",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部混凝土剥落或掉角",
+                        "explain": "累计面积≤构件面积的5%，或单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围混凝土剥落或掉角",
+                        "explain": "累计面积>构件面积的5%且<构件面积的10%，或单处面积>0.5 m2且<1.0 m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围混凝土剥落或掉角",
+                        "explain": "累计面积≥构件面积的10%，或单处面积≥1.0m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "空洞、孔洞",
+                "children": [
+                    {
+                        "describe": "完好，无空洞、孔洞",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部混凝土空洞、孔洞",
+                        "explain": "累计面积≤构件面积的5% ，或单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围混凝土空洞、孔洞",
+                        "explain": "累计面积>构件面积的5%且<构件面积的10%，或单处面积>0.5m2且<1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围混凝土空洞、孔洞",
+                        "explain": "累计面积≥构件面积的10%，或单处面积≥1.0m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "混凝土保护层厚度",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "承重构件混凝土保护层厚度符合要求，对钢筋耐久性有轻度影响",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "承重构件混凝土保护层厚度不足，对钢筋耐久性有较大影响，造成钢筋锈蚀",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "承重构件混凝土保护层厚度严重不足，对钢筋耐久性有很大影响，钢筋失去碱性保护，发生较严重锈蚀",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 7,
+                "evaluateName": "钢筋锈蚀",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "承重构件钢筋锈蚀电位水平为0~-200mV，或电阻率>200000Ω·cm",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "承重构件有轻微锈蚀现象",
+                        "explain": "承重构件钢筋锈蚀电位水平为-200~一300mV，或电阻率为15000~20000Ω·cm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "承重构件钢筋发生锈蚀，混凝土表面有沿钢筋的裂缝或混凝土表面有锈迹",
+                        "explain": "承重构件钢筋锈蚀电位水平为-300~-400mV，或电阻率为10000~15000Ω·cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "承重构件钢筋锈蚀引起混凝土剥落，钢筋裸露，表面膨胀性锈层显著",
+                        "explain": "承重构件钢筋锈蚀电位水平为-400~-500mV，或电阻率为5000~10000Ω·cm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "承重构件大量钢筋锈蚀引起混凝土剥落，部分钢筋屈服或锈断，混凝土表面严重开裂，影响结构安全",
+                        "explain": "承重构件钢筋锈蚀电位水平<一500mV，或电阻率<5 0000Ω·cm",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 8,
+                "evaluateName": "混凝土碳化",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "承重构件有少量碳化现象，且所有碳化深度均小于混凝土保护层厚度",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "承重构件的主要受力部位部分位置出现碳化现象，局部碳化深度大于混凝上保护层厚度，混凝土表面少量胶凝料松散粉化",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "承重构件的主要受力部位全部测点碳化且碳化深度大于混凝土保护层厚度，混凝土表面胶凝料大量松散粉化",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 9,
+                "evaluateName": "钢结构裂缝",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "钢构件出现极少量细小裂纹",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "钢构件出现较多细小裂缝，截面削弱",
+                        "explain": "受拉翼缘焊接盖板端部裂缝长度≤10mm，或桁梁端横梁与纵梁连接处下端处裂缝长度≤20mm，或主桁腹杆铆接、栓接头处裂缝长度≤20mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "钢构件出现较多裂缝，截面削弱",
+                        "explain": "受拉翼缘焊接盖板端部裂缝长度>10mm且≤20mm，或桁梁端横梁与纵梁连接处下端处裂缝长度> 20mm且≤50mm，或主桁腹杆铆接、栓接头处裂缝长度> 20mm且≤50mm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "钢构件严重裂缝，主梁变形，造成严重安全隐患",
+                        "explain": "受拉翼缘焊接盖板端部裂缝长度>20mm，或桁梁端横梁与纵梁连接处下端处裂缝长度>50mm，或主桁腹杆铆接、栓接头处裂缝长度> 50mm",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 10,
+                "evaluateName": "涂层劣化",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "涂层个别位置出现流痕、气泡、白化、漆膜发黏、针孔、起皱或皱纹、表面粉化、变色起皮、脱落等缺陷",
+                        "explain": "累计面积≤构件面积的10%.",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "涂层出现较严重流痕、气泡、白化漆膜发黏、针孔起皱或皱纹、表面粉化、变色起皮、脱落等缺陷",
+                        "explain": "累计面积>构件面积的10%且≤构件面积的50%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "涂层出现严重流痕、气泡、白化、漆膜发黏、针孔、起皱或皱纹、表面粉化变色起皮、脱落等缺陷",
+                        "explain": "累计面积>构件面积的50%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 11,
+                "evaluateName": "焊缝开裂",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "焊缝部位涂层有少量裂纹",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "焊缝部位涂层有大量裂纹，受拉翼缘边焊缝存在裂缝，其他部位焊缝无裂缝",
+                        "explain": "主梁、纵横梁受拉翼缘边焊缝开裂长度≤5mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "主要构件焊缝出现较多裂缝，构件出现变形",
+                        "explain": "主梁、纵横梁受拉翼缘边焊缝开裂长度>5mm且≤10mm，其他位置焊缝开裂长度≤5mm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "主要构件焊缝存在大量裂缝甚至完全开裂，主要构件存在明显的变形，变形大于规范值",
+                        "explain": "主梁、纵横梁受拉翼缘边焊缝开裂长度>10mm，其他位置焊缝开裂长度> 5mm",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 12,
+                "evaluateName": "铆钉(螺栓)损失",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "铆钉(螺栓)少量损坏、松动或丢失，造成联结部位铆钉(螺栓)失效",
+                        "explain": "损坏、失效数量<总量的1%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "铆钉(螺栓)有较多损坏、松动或丢失，造成联结部位铆钉(螺栓)失效",
+                        "explain": "损坏、失效数量>总量的1%且≤总量的10%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "主要构件铆钉(螺栓)有较多损坏、松动或丢失，造成联结部位铆钉(螺栓)失效，构件出现明显变形",
+                        "explain": "损坏、失效数量>总量的10%且≤总量的30%",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "主要构件铆钉(螺栓)有大量损坏、松动或丢失，造成联结部位铆钉(螺栓)失效，主要构件存在明显的永久变形，变形大于规范值",
+                        "explain": "损坏、失效数量>总量的30%",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 13,
+                "evaluateName": "结构变位",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "横向联结件出现松动，纵向接缝开裂较大",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "主要构件存在明显的永久变形，变形小于或等于规范值，或桥面竖向呈波形",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "主要构件存在明显的永久变形，变形大于规范值，结构振动或摇晃显著、有不正常移动",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 14,
+                "evaluateName": "构件锈蚀",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "构件表面锈蚀，且部分氧化皮或油漆层剥落",
+                        "explain": "锈蚀累计面积≤构件面积的2%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "构件表面有较多点蚀现象，氧化皮或油漆层因锈蚀而部分剥落或者可以刮除，出现锈蚀成洞现象",
+                        "explain": "锈蚀累计面积>构件面积的2%且≤构件面积的5%，或锈蚀孔洞≤2个，孔洞直径≤30mm，边缘完好，或腹板、横隔板洞孔直径≤50mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "构件表面有严重的点蚀现象，氧化皮或油漆层因锈蚀而全面剥离，较多部位被锈蚀成洞，影响构件安全",
+                        "explain": "锈蚀累计面积>构件面积的5% ，或锈蚀孔洞>2个，孔洞直径> 30mm，或腹板、横隔板孔洞直径> 50mm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 15,
+                "evaluateName": "跨中挠度",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "跨中挠度未大于限值",
+                        "explain": "跨中最大挠度≤计算跨径的1/600",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "跨中挠度大于限值",
+                        "explain": "跨中最大挠度>计算跨径的1/600且≤计算跨径的1/400",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "跨中挠度大于限值，主梁严重变形，梁体出现严重病害，有不正常移动并影响结构安全",
+                        "explain": "跨中最大挠度>计算跨径的1/400",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 16,
+                "evaluateName": "构件变形",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "构件轻微变形",
+                        "explain": "压力杆件弯曲矢度≤杆件自由长度的1/1 500，或拉力杆件弯曲矢度≤杆件自由长度的1/800，或腹杆、连接杆件弯曲矢度≤杆件自由长度的1/500",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "构件明显变形",
+                        "explain": "压力杆件弯曲矢度>杆件自由长度的1/1 500且≤杆件自由长度的1/1 000 ，或拉力杆件弯曲矢度>杆件自由长度的1/800且≤杆件自由长度的1/500，或腹杆、连接杆件弯曲矢度>杆件自由长度的1/500且≤杆件自由长度的1/300",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "构件严重变形，存在失稳现象，结构振动或摇晃显著",
+                        "explain": "压力杆件弯曲矢度>杆件自由长度的1/1 000，或拉力杆件弯曲矢度>杆件自由长度的1/500，或腹杆、连接杆件弯曲矢度>杆件自由长度的1/300",
+                        "scale": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 6,
+        "componentName": "索塔",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "倾斜变形",
+                "children": [
+                    {
+                        "describe": "无倾斜变形",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有颐斜变形现象或存在扭转现象，但情况较轻微，不影响结构安全",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "存在倾斜变形或存在扭转，两塔不对称变位，存在安全隐患",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "索塔出现明显倾斜。或两塔不对称变位严重，造成主梁出现严重变形，严重影响结构安全",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "裂缝",
+                "children": [
+                    {
+                        "describe": "完好，无裂缝",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状裂缝",
+                        "explain": "网状裂缝:累计面积≤构件面积的20%，单处面积≤1.0m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "其他裂缝:有少量裂缝，缝宽未超限",
+                        "explain": "其他裂缝:缝 长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状裂缝",
+                        "explain": "网状裂缝:累计面积>构件面积的20%，单处面积>1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "其他裂縫:有大量裂缝，缝宽未超限",
+                        "explain": "其他裂缝:缝长>截面尺寸的1/3且≤截面尺寸的2/3，间距≥20cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "有大量裂缝，缝宽超限",
+                        "explain": "缝宽>限值，缝长>截面尺寸的2/3，间距<20cm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "沉降",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "索塔有小幅度沉降，但沉降稳定",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "索塔沉降较大，但沉降稳定",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "索塔沉降量异常且不稳定，或索塔基础出现严重沉降或位移",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "锚固区渗水",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "锚固区有轻微渗水",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "锚固区有局部明显渗水，渗水量较大",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "锚固区多处有明显渗水，渗水量大;个别渗水处伴有晶体析出或锈蚀，流膏处混凝土松散",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "蜂窝、麻面",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部蜂窝麻面",
+                        "explain": "累计面积≤构件面积的20%，单处面积≤3.0m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "大面积蜂窝麻面",
+                        "explain": "累计面积>构件面积的20%，单处面积>3.0m²",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "剥落、露筋",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "-",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部混凝土剥落或露筋",
+                        "explain": "累计面积≤构件面积的3%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围混凝土剥落或露筋",
+                        "explain": "累计面积>构件面积的3%且≤构件面积的10%，单处面积>0.5m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围混凝土剥落或露筋",
+                        "explain": "累计面积>构件面积的10%，单处面积>0.5m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 7,
+                "evaluateName": "钢筋锈蚀",
+                "children": [
+                    {
+                        "describe": "完好，无锈蚀现象",
+                        "explain": "钢筋锈蚀电位水平≤0mV且≥- 200mV;或电阻率>20000Ω·cm",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有锈蚀现象，混凝土表面有沿钢筋的裂缝或混凝土表面有锈迹",
+                        "explain": "钢筋锈蚀电位水平< - 200mV且≥-400mV;或电阻率≥10000Ω·cm且≤20000Ω·cm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "钢筋锈蚀，主筋锈蚀或混凝土表面保护层剥落",
+                        "explain": "钢筋锈蚀电位水平< - 400mV且≥- 500mV;或电阻率≥5000Ω·cm且<10000Ω·cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "钢筋严重锈蚀，混凝土表面开裂严重",
+                        "explain": "钢筋锈蚀电位水平为< - 500mV;或电阻率<50000Ω·cm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 8,
+                "evaluateName": "基础冲刷",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "基础基本无局部冲刷现象",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "基础出现局部冲刷现象，程度较轻",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "基础出现较严重局部冲刷现象",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "基础出现严重局部冲刷现象，基础不稳定，出现严重滑动、下沉、位移、倾斜等现象",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 7,
+        "componentName": "支座",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "11",
+                "children": [
+                    {
+                        "describe": "1111",
+                        "explain": "111",
+                        "scale": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 8,
+        "componentName": "翼墙、耳墙",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "破损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "局部混凝土出现空洞、孔洞、剥落，或砖石表面小块脱落",
+                        "explain": "累计面积≤构件面积的5%，单处面积≤0.5m²",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "较大范围混凝土或砖石出现空洞、孔洞、剥落",
+                        "explain": "累计面积>构件面积的5%且≤构件面积的20%，单处面积≤1.0m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "大范围混凝土或砖石出现空洞、孔洞、剥落",
+                        "explain": "累计面积>构件面积的20%",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "位移",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "存在明显的永久变形，但无明显的外倾、下沉，或出现填料损失，但仍可起到挡土的作用",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "有下沉、滑动现象，造成翼墙断裂，外倾失稳，砌体变形，部分倒塌，或填料严重流失，失去挡土功能",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "鼓肚、砌体松动",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部鼓肚，砌体松动",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "大面积鼓肚，砌体松动",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大面积鼓肚，砌体松动，甚至出现严重渗漏",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "裂缝",
+                "children": [
+                    {
+                        "describe": "完好或有轻微网裂",
+                        "explain": "网裂总面积≤10%",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "较多网裂。出现个别裂缝，缝宽未超限",
+                        "explain": "网裂总面积>10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "出现多处裂缝，未贯通，缝宽超限，或翼墙或耳墙有断裂，与前墙脱开现象",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "出现通缝，裂缝超限，或翼墙或耳墙断裂，与前墙完全脱开",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 9,
+        "componentName": "锥坡、护坡",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "缺陷",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "铺砌面局部隆起、凹陷、开裂，砌缝砂浆脱落，或局部铺砌面下滑，坡角损坏",
+                        "explain": "缺陷面积≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "铺砌面出现大面积隆起、凹陷、开裂，砌缝砂浆脱落",
+                        "explain": "缺陷面积> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "出现孔洞，破损等，丧失锥坡、护坡功能，或锥坡体和坡脚损坏严重，大面积滑坡、坍塌，坡顶下降较大，锥坡、护坡作用明显降低",
+                        "explain": "缺陷面积>20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "冲刷、淘空",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部冲成浅坑",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "坡脚局部冲蚀，冲成深坑、沟或槽",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "锥坡体和坡脚冲蚀严重，基础有淘空现象",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 10,
+        "componentName": "墩身",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "蜂窝、麻面",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "轻微蜂窝、麻面",
+                        "explain": "累计面积≤构件面积的20%，单处面积≤1.0m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较多蜂窝、麻面",
+                        "explain": "累计面积>构件面积的20%，单处面积>1.0m²",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "剥落 、露筋",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部混凝土剥落、露筋",
+                        "explain": "累计面积≤构件面积的3%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围混凝土剥落、露筋",
+                        "explain": "累计面积>构件面积的3%且≤构件面积的10%，单处面积≤1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围混凝士剥落、露筋",
+                        "explain": "累计面积>构件面积的10% ，单处面积> 1.0m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "空洞、孔洞",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部空洞、孔洞",
+                        "explain": "累计面积≤构件面积的3%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围空洞、孔洞",
+                        "explain": "累计面积>构件面积的3%且≤构件面积的10%，单处面积≤0.5m²或最大深度≤25mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围空洞、孔洞",
+                        "explain": "累计面积>构件面积10%，单处面积>0.5m²或最大深度>25mm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "钢筋锈蚀",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有锈蚀现象",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "钢筋锈蚀，混凝土表面有沿主筋方向的裂缝或混凝土表面有锈迹",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大量主筋锈蚀，混凝土表面保护层剥落，钢筋裸露，甚至出现主筋锈断现象",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "钢筋严重锈蚀，主筋锈断，混凝t表面开裂严重，出现严重滑动或倾斜等现象",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "混凝土碳化、腐蚀",
+                "children": [
+                    {
+                        "describe": "无碳化现象",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有少量碳化或腐蚀现象，且所有碳化深度均小于混凝土保护层厚度",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "部分位置出现碳化现象，局部碳化深度大于混凝土保护层厚度，混凝土表面少量胶凝料松散粉化，或构件受强酸性液体或气体腐蚀，造成混凝土受到腐蚀，或钢筋出现少量锈蚀，或有冻融现象，造成混凝土出现胀裂",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大部分位置碳化，碳化深度大于混凝土保护层厚度，混凝土表面胶凝料大量松散粉化，或构件受强酸性液体或气体腐蚀，造成混凝土腐蚀或钢筋大量锈蚀，或有东融现象，造成混凝土严重胀裂",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "磨损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有磨损现象，个别部位表面磨耗，粗集料显露",
+                        "explain": "累计面积≤构件面积的5%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围有磨损、缩颈现象，并出现露筋或锈蚀",
+                        "explain": "累计面积>构件面积的5%且≤构件面积的20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围有磨损、缩颈现象，混凝土剥蚀，大范围出现露筋现象，裸露钢筋锈蚀",
+                        "explain": "累计面积>构件面积的20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 7,
+                "evaluateName": "圬工砌体缺陷",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "-",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "砌体局部出现灰缝脱落现象，或砌体局部出现破损、剥落等现象",
+                        "explain": "灰缝脱落累计长度≤构件截面长度的10%，或破损、剥落累计面积≤构件面积的3%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "砌体大范围出现灰缝脱落现象，或砌体较大范围出现破损、剥落、局部变形等现象",
+                        "explain": "灰缝脱落累计长度>构件截面长度的10%，或破损、剥落、局部变形等累计面积>构件面积的3%且≤构件面积的10%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "砌体大范围出现破损剥落、松动、变形等现象",
+                        "explain": "破损、剥落、松动、变形等累计面积>构件面积的10%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 8,
+                "evaluateName": "位移",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "桥墩出现轻微下沉、倾斜滑动等，发展缓慢或趋向稳定",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "桥墩出现滑动、下沉、倾斜，变形小于或等于规范值",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "桥墩不稳定，出现严重滑动、下沉、位移、倾斜现象，造成结构和桥面变形过大，变形大于规范值或不能正常行车",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 9,
+                "evaluateName": "裂缝",
+                "children": [
+                    {
+                        "describe": "完好，无裂缝",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状裂缝",
+                        "explain": "网状裂缝:累计面积≤构件面积的20%，单处面积≤1.0m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "墩身的水平裂缝:较少裂缝，缝宽未超限",
+                        "explain": "墩身的水平裂缝:缝长≤墩身直径或墩身宽度的1/8",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "竖向裂缝:较少裂缝，缝宽未超限",
+                        "explain": "竖向裂缝:缝长≤截面尺寸的1/5",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "不等高的墩盖梁上的竖向裂缝:较少裂.缝，缝宽未超限",
+                        "explain": "不等高的墩盖梁上的竖向裂缝:缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "悬臂桥墩角隅处的裂缝:较少裂缝，缝宽未超限",
+                        "explain": "悬臂桥墩角隅处的裂缝:缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "镶面石突出的裂缝:局部开裂",
+                        "explain": "镶面石突出的裂缝:累计面积≤构件面积的10%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状裂缝",
+                        "explain": "网状裂缝:累计面积>构件表面积的20%，单处面积>1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "从基础向_上发展至墩身的裂缝:较多裂缝，缝宽未超限",
+                        "explain": "从基础向上发展至墩身的裂缝:缝长≤截面尺寸的1/3，间距≥50cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "墩身的水平裂缝:较多裂缝，缝宽未超限",
+                        "explain": "墩身的水平裂缝:缝长>墩身直径或墩身宽度的1/8且≤墩身直径或墩身宽度的1/2",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "墩身的剪切破坏:较多裂缝，缝宽未超限",
+                        "explain": "墩身的剪切破坏:缝长≤截面尺寸的1/3",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "竖向裂缝:较多裂缝，缝宽未超限",
+                        "explain": "竖向裂缝:缝长>截面尺寸的1/5且≤截面尺寸的1/3，间距≥30cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "不等高的墩盖梁上的竖向裂缝:较多裂缝，缝宽未超限",
+                        "explain": "不等高的墩盖梁上的竖向裂缝:缝长>截面尺寸的1/3且≤截面尺寸的2/3",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "悬臂桥墩角隅处的裂缝:较多裂缝，缝宽未超限",
+                        "explain": "悬臂桥墩角隅处的裂缝:缝长>截面尺寸的1/3且≤截面尺寸的1/2",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "镶面石突出的裂缝:局部开裂，少量裂缝宽度超限",
+                        "explain": "镶面石突出的裂缝:累计面积>构件面积的10%且≤构件面积的20%，单处面积≤1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "从基础向上发展至墩身的裂缝:存在大量裂缝，缝宽大多超限",
+                        "explain": "从基础向上发展至墩身的裂缝:缝长>截面尺寸的1/3，间距< 50cm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "墩身的水平裂缝:存在大量裂缝，缝宽大多超限",
+                        "explain": "墩身的水平裂缝:缝长>墩身直径或墩身宽度的1/2",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "墩身的剪切破坏:缝宽超限",
+                        "explain": "墩身的剪切破坏:缝长>截面尺寸的1/3",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "竖向裂缝:存在大量裂缝，缝宽大多超限",
+                        "explain": "竖向裂缝:缝长>截面尺寸的1/3，间距< 30cm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "悬臂桥墩角隅处的裂缝:缝宽超限",
+                        "explain": "悬臂桥墩角隅处的裂缝:缝长>截面尺寸的1/2",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "不等高的墩盖梁上的竖向裂缝:存在大量裂缝，缝宽大多超限，少部分混凝土出现剥落露筋",
+                        "explain": "不等高的墩盖梁上的竖向裂缝:缝长>截面尺寸的2/3",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "镶面石突出的裂缝:多处开裂，裂缝宽度大多超限",
+                        "explain": "镶面石突出的裂缝:累计面积>构件面积的20%",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "桥墩出现结构性裂缝，缝宽超限，裂缝有开合现象，桥墩变形失稳",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 11,
+        "componentName": "盖梁和桥系",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "蜂窝、麻面",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "轻微蜂窝、麻面",
+                        "explain": "累计面积≤构件面积的20%，单处面积≤1.0m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较多蜂窝、麻面",
+                        "explain": "累计面积>构件面积的20%，单处面积>1.0m²",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "剥落 、露筋",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部混凝土剥落、露筋",
+                        "explain": "累计面积≤构件面积的3%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围混凝土剥落、露筋",
+                        "explain": "累计面积>构件面积的3%且≤构件面积的10%，单处面积≤1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围混凝士剥落、露筋",
+                        "explain": "累计面积>构件面积的10% ，单处面积> 1.0m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "空洞、孔洞",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部空洞、孔洞",
+                        "explain": "累计面积≤构件面积的3%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围空洞、孔洞",
+                        "explain": "累计面积>构件面积的3%且≤构件面积的10%，单处面积≤0.5m²或最大深度≤25mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围空洞、孔洞",
+                        "explain": "累计面积>构件面积10%，单处面积>0.5m²或最大深度>25mm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "钢筋锈蚀",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有锈蚀现象",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "钢筋锈蚀，混凝土表面有沿主筋方向的裂缝或混凝土表面有锈迹",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大量主筋锈蚀，混凝土表面保护层剥落，钢筋裸露，甚至出现主筋锈断现象",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "钢筋严重锈蚀，主筋锈断，混凝t表面开裂严重，出现严重滑动或倾斜等现象",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "混凝土碳化、腐蚀",
+                "children": [
+                    {
+                        "describe": "无碳化现象",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有少量碳化或腐蚀现象，且所有碳化深度均小于混凝土保护层厚度",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "部分位置出现碳化现象，局部碳化深度大于混凝土保护层厚度，混凝土表面少量胶凝料松散粉化，或构件受强酸性液体或气体腐蚀，造成混凝土受到腐蚀，或钢筋出现少量锈蚀，或有冻融现象，造成混凝土出现胀裂",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大部分位置碳化，碳化深度大于混凝土保护层厚度，混凝土表面胶凝料大量松散粉化，或构件受强酸性液体或气体腐蚀，造成混凝土腐蚀或钢筋大量锈蚀，或有东融现象，造成混凝土严重胀裂",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "裂缝",
+                "children": [
+                    {
+                        "describe": "完好，无裂缝",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状开裂",
+                        "explain": "网状裂缝:累计面积≤构件面积的20%，单处面积≤1.0m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "墩帽顶面水平裂缝:少量裂缝，缝宽未超限",
+                        "explain": "墩帽顶面水平裂缝:缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "由支承垫石从下向上发展的裂缝:缝宽未超限",
+                        "explain": "由支承垫石从下向上发展的裂缝:缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "盖梁自上而下的垂直裂缝:缝宽未超限",
+                        "explain": "盖梁自上而下的垂直裂缝:缝长≤截面尺寸的1/5，间距> 80cm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "网状裂缝:局部网裂",
+                        "explain": "网状裂缝:累计面积>构件面积的20%，单处面积>1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "墩帽顶面水平裂缝:缝宽未超限",
+                        "explain": "墩帽顶面水平裂缝:缝长>截面尺寸的1/3且≤截面尺寸的2/3，间距≥20cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "由支承垫石从下向上发展的裂缝:缝宽未超限",
+                        "explain": "由支承垫石从下向上发展的裂缝:缝长>截面尺寸的1/3且≤截面尺寸的2/3 ",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "盖梁自上而下的垂直裂缝:缝宽未超限",
+                        "explain": "盖梁自上而下的垂直裂缝:缝长>截面尺寸的1/5且≤截面尺寸的1/3，间距≥50cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "墩帽顶面水平裂缝:存在大量裂缝，缝宽超限",
+                        "explain": "墩帽顶面水平裂缝:缝长>截面尺寸的2/3，间距< 20cm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "由支承垫石从下向上发展的裂缝:存在大量裂缝，缝宽超限",
+                        "explain": "由支承垫石从下向上发展的裂缝:缝长>截面尺寸的2/3",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "盖梁自上而下的垂直裂缝:裂缝贯通，缝宽超限",
+                        "explain": "盖梁自上而下的垂直裂缝:缝长> 1/3截面尺寸，间距< 50cm",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 12,
+        "componentName": "台身",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "剥落",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部混凝土剥落",
+                        "explain": "累计面积≤构件面积的5% ，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围混凝土剥落",
+                        "explain": "累计面积>构件面积的5%且≤构件面积的20% ，单处面积≤1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围混凝土剥落",
+                        "explain": "累计面积>构件面积的20%，单处面积>1.0m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "空洞、孔洞",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部空洞、孔洞",
+                        "explain": "累计面积≤构件面积的5%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围空洞、孔洞",
+                        "explain": "累计面积>构件面积的5%且≤构件面积的20%，单处面积≤1.0m²或深度≤25mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围空洞、孔洞",
+                        "explain": "累计面积>构件面积的20%，单处面积>1.0m²或深度>25mm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "磨损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "出现磨损，个别部位表面磨耗，粗集料显露",
+                        "explain": "累计面积≤构件面积的10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "大范围有磨损，粗集料显露",
+                        "explain": "累计面积>构件面积的10%",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "混凝土碳化、腐蚀",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有局部碳化或腐蚀现象，且所有碳化深度均小于混凝土保护层厚度",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "大部分出现碳化或腐蚀现象，局部碳化深度大于混凝土保护层厚度，混凝土表面少量胶凝料松散粉化",
+                        "explain": "无",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "圬工砌体缺陷",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "砌体局部出现灰缝脱落现象，或砌体局部出现破损、剥落等现象",
+                        "explain": "灰缝脱落累计长度≤构件截面长度的10%，或破损、剥落累计面积<构件面积的3%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "砌体大范围出现灰缝脱落现象，或砌体较大范围出现破损、剥落、局部变形等现象",
+                        "explain": "灰缝脱落累计长度>构件截面长度的10% ，或破损剥落、局部变形等累计面积>构件面积的3%且≤构件面积的10%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "砌体大范围出现破损、剥落、松动、变形等现象",
+                        "explain": "破损、剥落、松动、变形等现象累计面积>构件面积的10%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "桥头跳车",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "台背路面轻微沉降，有轻度跳车现象",
+                        "explain": "沉降值≤2cm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "台背路面沉降较大，桥头跳车明显",
+                        "explain": "沉降值>2cm且≤5cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "台背路面明显沉降，桥头跳车严重",
+                        "explain": "沉降值>5cm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 7,
+                "evaluateName": "台背排水状况",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "台背排水不良，造成桥台被渗水污染",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "台背填土排水不畅，填土出现膨胀或冻胀现象，造成挤压隆起，变形发展较快",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "台背填土排水不畅，填土出现膨胀或冻胀现象，造成台身翼墙等构件出现大面积鼓肚或砌体松动，甚至出现严重变形",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 8,
+                "evaluateName": "位移",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "出现轻微下沉、倾斜滑动，发展缓慢或趋向稳定",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "桥台出现滑动、下沉倾斜、冻拔等，台背填士有沉降裂缝或挤压隆起，变形发展较快，变形小于或等于规范值",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "桥台不稳定，出现严重滑动、下沉位移倾斜、冻拔等，造成结构和桥面变形过大，变形大于规范值或不能正常行车",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 9,
+                "evaluateName": "裂缝",
+                "children": [
+                    {
+                        "describe": "完好，无裂缝",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状开裂",
+                        "explain": "网状裂缝:累计面积≤构件面积的20%，单处面积≤1.0m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "从基础向上发展至台身的裂缝:缝宽未超限",
+                        "explain": "从基础向上发展至台身的裂缝:縫长≤截面尺寸1/5",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "台身的水平裂缝:缝宽未超限",
+                        "explain": "台身的水平裂缝:缝长≤台身宽的1/8",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "竖向裂缝:缝宽未超限",
+                        "explain": "竖向裂缝:缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "翼墙和前墙断裂的裂缝:出现开裂，缝宽未超限",
+                        "explain": "翼墙和前墙断裂的裂缝:缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "镶面石突出的裂缝:局部开裂",
+                        "explain": "镶面石突出的裂缝:累计面积≤构件面积的10% ，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "网状裂缝:局部网状裂缝",
+                        "explain": "网状裂缝:累计面积>构件面积的20% ，单处面积> 1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "从基础向上发展至台身的裂缝:缝宽未超限",
+                        "explain": "从基础向上发展至台身的裂缝:缝长>截面尺寸的1/5且≤截面尺寸的1/3 ，间距≥20cm ",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "台身的水平裂缝:缝宽未超限",
+                        "explain": "台身的水平裂缝:缝长>台身宽的1/8且≤台身宽的1/2",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "竖向裂缝:缝宽未超限",
+                        "explain": "竖向裂缝:缝长>截面尺寸的1/3且≤截面尺寸的1/2，间距≥20cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "翼墙和前墙断裂的裂缝:出现开裂，縫宽超限",
+                        "explain": "翼墙和前墙断裂的裂缝:缝长>截面尺寸的1/3且≤截面尺寸的2/3",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "镶面石突出的裂缝:局部开裂",
+                        "explain": "镶面石突出的裂缝:累计面积>构件面积的10%，单处面积>1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "从基础向上发展至台身的裂缝:重点部位缝宽超限",
+                        "explain": "从基础向上发展至台身的裂缝:缝长>截面尺寸的1/3，间距<20cm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "台身的水平裂缝:重点部位缝宽超限",
+                        "explain": "台身的水平裂缝:缝长>台身宽的1/2",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "竖向裂缝:重点部位缝宽超限",
+                        "explain": "竖向裂缝:缝长>截面尺寸的1/2，间距< 20cm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "翼墙和前墙断裂的裂缝:出现开裂，缝宽超限",
+                        "explain": "翼墙和前墙断裂的裂缝:缝长>截面尺寸的2/3，缝宽>1.0mm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "桥台出现结构性裂缝，桥台变形失稳",
+                        "explain": "缝宽>1.0mm，缝长>台身宽的2/3",
+                        "scale": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 13,
+        "componentName": "台帽",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "破损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部混凝土剥落磨损等",
+                        "explain": "累计面积≤构件面积的10% ，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围混凝土剥落、磨损等",
+                        "explain": "累计面积>构件面积的10%且≤构件面积的20% ，单处面积≤10m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围混凝土剥落、磨损等",
+                        "explain": "累计面积≥构件面积的20%，单处面积>1.0m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "混凝 土碳化腐蚀",
+                "children": [
+                    {
+                        "describe": "无碳化现象",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "有局部碳化或腐蚀现象，且所有碳化深度均小于混凝土保护层厚度",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "大部分出现碳化或腐蚀现象，局部碳化深度大于混凝土保护层厚度，混凝土表面松散粉化",
+                        "explain": "无",
+                        "scale": 3
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "裂缝",
+                "children": [
+                    {
+                        "describe": "完好，无裂缝",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "由支承垫石从下向上发展的裂缝:缝宽未超限",
+                        "explain": "由支承垫石从下向上发展的裂缝:缝长≤截面尺寸的2/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "台帽自上而下的垂直裂缝:缝宽未超限",
+                        "explain": "台帽自上而下的垂直裂缝:缝长≤截面尺寸的2/3，间距≥20cm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "由支承垫石从下向.上发展的裂缝:缝宽超限",
+                        "explain": "由支承垫石从下向，上发展的裂缝:缝长>截面尺寸的2/3",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "台帽自上而下的垂直裂缝:缝宽超限",
+                        "explain": "台帽自上而下的垂直裂缝:缝宽>限值且≤1.0mm，缝长>截面尺寸的2/3，间距<20cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "台帽自上而下的垂直裂缝:缝宽超限",
+                        "explain": "台帽自_上而下的垂直裂缝:缝宽> 1. 0mm，缝长>截面尺寸的2/3，间距<20cm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "空洞、孔洞",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部空洞、孔洞",
+                        "explain": "累计面积≤构件面积的5%，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较大范围空洞、孔洞",
+                        "explain": "累计面积>构件面积的5%且≤构件面积的20%，单处面积≤1.0m²或深度≤25mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大范围空洞、孔洞",
+                        "explain": "累计面积>构件面积的20%，单处面积>1.0m²或深度>25mm",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 14,
+        "componentName": "基础",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "冲刷、淘空",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "基础无冲蚀现象，表面长有青苔、杂草",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "基础有局部冲蚀现象，部分外露，但未露出基底",
+                        "explain": "基础冲空面积≤10%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "浅基被冲空，露出底面，冲刷深度大于设计值",
+                        "explain": "基础冲空面积> 10%且≤20%",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "冲刷深度大于设计值，地基失效，承载力降低，或桥台岸坡滑移或基础无法修复",
+                        "explain": "基础冲空面积> 20%",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "剥落 、露筋",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "承台出现少量剥落、露筋、锈蚀现象，或基础少量混凝土剥落",
+                        "explain": "累计面积≤构件面积的3%，单处面积≤0.25m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "承台较大范围出现剥落、露筋、锈蚀现象，或基础小范围出现剥落、露筋、锈蚀现象",
+                        "explain": "剥落露筋累计面积>构件面积的3%且≤构件面积的10%，单处面积>0.25m²且≤1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "承台大范围出现严重剥落、露筋、锈蚀现象且混凝土出现严重锈蚀裂缝，或基础较大范围出现剥落、露筋，主筋严重锈蚀",
+                        "explain": "剥落、露筋累计面积>构件面积的10%且≤构件面积的20%，单处面积>1.0m²",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "基础大量剥落、露筋且主筋有锈断现象，基础失稳",
+                        "explain": "基础剥落、露筋累计面积>构件面积的20%，单处面积>1.0m²",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "冲蚀",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "基础或承台有轻微磨损、腐蚀现象，个别部位表面磨耗，粗骨料显露",
+                        "explain": "累计面积≤构件面积的3%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "基础或承台大范围被侵蚀，有磨损、缩颈、露筋或者环状冻裂现象;或桩基顶面出现较大空洞",
+                        "explain": "累计面积>构件面积的3%且≤构件面积的10%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "混凝土腐蚀或钢筋大量锈蚀并有锈断现象;或有严重冻融现象，造成大面积混凝土胀裂",
+                        "explain": "累计面积>构件面积的10%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "河底铺砌损坏",
+                "children": [
+                    {
+                        "describe": "河底铺砌完好，无冲刷现象",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "河底铺砌局部轻微冲刷或损坏",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "河底铺砌冲刷较重或损坏严重",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "河底铺砌出现严重冲刷淘空或损坏",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "沉降",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "出现轻微的下沉，发展缓慢或下沉趋于稳定",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "出现下沉现象，沉降量小于或等于规范值",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "基础不稳定，下沉现象严重，沉降量大于规范值，造成上部结构和桥面系变形过大",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "滑移和倾斜",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "出现滑移或倾斜，导致支座和墩台支承面轻微损坏，或导致伸缩装置破坏、接缝减小、伸缩机能受损，但发展缓慢或下沉趋于稳定",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "基础出现滑移或倾斜，导致支座和墩台支承面被严重破坏，或导致伸缩装置破坏、接缝减小、伸缩机能完全丧失，或滑移量过大，梁端与胸墙紧贴",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "滑移量过大导致前墙破坏或局部破碎、压曲，或基础不稳定，滑移或倾斜现象严重，或导致梁体从支承面上滑落",
+                        "explain": "无",
+                        "scale": 5
+                    }
+                ]
+            },
+            {
+                "evaluateId": 7,
+                "evaluateName": "裂缝",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "结构应力异常，出现剪切裂缝，缝宽未超限",
+                        "explain": "缝长≤截面尺寸的1/3",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "结构应力异常，出现剪切裂缝，缝宽未超限",
+                        "explain": "缝长>截面尺寸的1/3且≤截面尺寸的1/2",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "结构应力异常，出现剪切裂缝或混凝土出现碎裂",
+                        "explain": "缝宽>限值且≤1.0mm，缝长>截面尺寸的1/2",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "结构应力异常，出现剪切裂缝，裂缝贯通，基础处于失稳状态，或基础出现结构性裂缝甚至断裂",
+                        "explain": "缝宽>1.0mm ，缝长>截面尺寸的1/2",
+                        "scale": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 15,
+        "componentName": "河床",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "堵塞",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部有漂流物，堵塞河道",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处有漂流物堵塞河道",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "河道被完全堵塞",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "冲刷",
+                "children": [
+                    {
+                        "describe": "河床稳定，无冲刷现象",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部轻微冲刷",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "冲刷较重，墩台底有淘空现象，防护体损坏严重",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "河床压缩，出现严重冲刷淘空，危及桥梁安全",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "河床变迁",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部轻微淤积",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "河床淤泥严重，河床扩宽有变迁趋势",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "已出现变迁扩宽现象，并有发展趋势",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 16,
+        "componentName": "调治构造物",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "损坏",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "构造物局部断裂，砌体松动鼓肚、凹陷或灰浆脱落",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "表面出现大面积损坏或坡脚局部损坏",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "需要设置但没有设置调治构造物者",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "冲刷、变形",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "边坡局部下滑，基础局部冲空",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "边坡大面积下滑，构造物出现下沉倾斜，局部坍塌",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "构造物出现下沉、倾斜坍塌，基础冲蚀严重",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 17,
+        "componentName": "沥青 混凝土桥面铺装",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "变形(车辙、拥包、高低不平等)",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部出现波浪拥包",
+                        "explain": "波浪拥包面积≤10%，波峰波谷高差≤25mm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或局部有高低不平的现象",
+                        "explain": "高低差≤25mm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或局部出现车辙，深度较浅",
+                        "explain": "铺装层出现车辙的面积≤10%，深度≤25mm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处出现波浪拥包",
+                        "explain": "波浪拥包面积>10%且≤20%，波峰波谷高差≤25mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或多处有高低不平的现象",
+                        "explain": "高低差≤25mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或较大面积出现车辙，深度较浅",
+                        "explain": "铺装层出现车辙的面积> 10%且≤20% ，深度≤25mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大面积出现波浪拥包",
+                        "explain": "波浪拥包面积>20%，波峰波谷高差>25mm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或普遍有高低不平的现象",
+                        "explain": "高低差> 25mm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或大面积出现车辙，深度较深",
+                        "explain": "铺装层出现车辙的面积>20%，深度>25mm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "泛油",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部出现泛油",
+                        "explain": "面积≤10% ",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处出现泛油",
+                        "explain": "面积> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大面积出现泛油、磨光",
+                        "explain": "面积>20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "破损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "面层局部松散、露骨",
+                        "explain": "松散、露骨累计面积≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或局部浅坑槽",
+                        "explain": "坑槽深度≤25mm，累计面积≤3% ，单处面积≤0.5m²",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处松散、露骨",
+                        "explain": "松散、露骨累计面积>10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或多处出现坑槽",
+                        "explain": "坑槽深度≤25mm，累计面积>3%且≤10%，单处面积>0.5m²且≤1.0m²",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大部分松散、露骨",
+                        "explain": "松散、露骨累计面积>20%",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "大部分有坑槽",
+                        "explain": "坑槽深度> 25mm，累计面积> 10% ，单处面积> 1. 0m²",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "裂缝(龟裂、块裂、纵向裂缝、横向裂缝等)",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部龟裂，裂缝区无变形、无散落",
+                        "explain": "龟裂缝宽≤2.0mm，部分裂缝块度≤5.0m",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或局部块裂，裂缝区无散落",
+                        "explain": "块裂缝宽≤3.0mm，大部分裂缝块度> 1.0m",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或有纵横裂缝，裂缝壁无散落，无支缝",
+                        "explain": "纵橫裂缝缝长≤1.0m，缝宽≤3.0mm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "局部龟裂，状态明显，裂缝区有轻度散落或变形",
+                        "explain": "龟裂缝宽>2. 0mm且≤5.0mm，部分裂缝块度≤2.0m",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或局部块裂，裂缝区有散落",
+                        "explain": "块裂缝宽> 3.0mm，大部分裂缝块度>0. 5m且≤1.0m ",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或有纵横裂缝，裂缝壁有散落，有支缝",
+                        "explain": "纵横裂缝缝长>1.0m且≤2.0m，缝宽>3.0mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "多处龟裂，特征显著，裂缝区变形明显、散落严重",
+                        "explain": "龟裂缝宽>5.0mm，大部分裂缝块度≤2.0m",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或多处块裂，裂缝区散落严重",
+                        "explain": "块裂缝宽> 3.0mm，大部分裂缝块度≤0.5m",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或有纵横通缝，裂縫壁散落，支缝严重",
+                        "explain": "纵横裂缝缝长>2.0m，缝宽>3.0mm",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 18,
+        "componentName": "水泥混凝土桥面铺装",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "磨光、脱皮、露骨",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部出现磨光、脱皮、露骨",
+                        "explain": "面积≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处出现磨光、脱皮、露骨",
+                        "explain": "面积> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大面积出现磨光、脱皮、露骨",
+                        "explain": "面积>20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "错台",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部接缝两侧出现高差现象",
+                        "explain": "高差≤10mm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处接缝两侧出现高差现象",
+                        "explain": "高差> 10mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "绝大多数接缝两侧出现高差现象",
+                        "explain": "高差> 10mm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "坑洞",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部出现坑洞",
+                        "explain": "深度≤1cm，直径≤3cm，或累计面积≤3%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处坑洞",
+                        "explain": "深度> 1cm，直径> 3cm，或累计面积>3%且≤10%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大部分有坑洞",
+                        "explain": "深度> 1cm，直径> 3cm，或累计面积> 10%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "剥落",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部接缝处出现浅层边角剥落，局部出现层状剥落",
+                        "explain": "层状剥落累计面积≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处接缝处出现中、深层边角剥落，局部出现层状剥落",
+                        "explain": "层状剥落累计面积> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大部分接缝处出现深层边角剥落，局部出现层状剥落",
+                        "explain": "层状剥落累计面积> 20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 5,
+                "evaluateName": "拱起",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "接缝两侧出现轻微抬高",
+                        "explain": "接缝拱起条数≤总数的10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "接缝两侧出现较大抬高",
+                        "explain": "接缝拱起条数>总数的10%且≤总数的20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "接缝两侧出现明显抬高",
+                        "explain": "接缝拱起条数>总数的20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 6,
+                "evaluateName": "接缝料损坏",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "接缝处填料老化、漏水，但尚未出现剥落、脱空，或被杂物填塞现象",
+                        "explain": "填料老化、漏水≤整条缝的10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "接缝处填料老化、漏水，部分填料脱空，或被杂物填塞",
+                        "explain": "填料老化、漏水>整条缝的10%且≤整条缝的20%，或脱空、填塞长度≤接缝长的1/3",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "接缝处填料老化、漏水，多处填料脱空，或被杂物填塞",
+                        "explain": "填料老化、漏水>整条缝20% ，或脱空、填塞长度>接缝长的1/3",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 7,
+                "evaluateName": "裂缝(板角断裂、破碎板)",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部存在横向裂缝.纵向裂缝或斜裂缝，但未贯通",
+                        "explain": "裂缝缝宽<3mm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或板角处裂缝与纵横接缝相交",
+                        "explain": "交点距角点≤1/2板块边长，裂缝缝宽< 3mm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或局部出现破碎板，但未发生松动、沉陷等病害",
+                        "explain": "每块板被分成2~3块",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多数存在横向裂缝、纵向裂缝或斜裂缝，边缘有碎裂",
+                        "explain": "裂缝缝宽≥3mm且≤10mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或板角处裂缝与纵横向接缝相交，边缘存在碎裂",
+                        "explain": "交点距角点≤1/2板块边长，裂缝缝宽≥3mm且≤10mm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或出现较多破碎板，板块伴有松动、沉陷、唧泥等现象",
+                        "explain": "每块板被分成3~4块",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大部分存在横向裂缝、纵向裂缝或斜裂缝，边缘有碎裂，并伴有错台出现",
+                        "explain": "裂缝缝宽> 10mm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或板角处裂缝与纵横向接缝相交，断角有松动",
+                        "explain": "交点距角点≤1/2板块边长，缝宽> 10mm",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或出现大量破碎板，板块伴有松动、沉陷、唧泥等现象",
+                        "explain": "每块板被分成4块以上",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 19,
+        "componentName": "伸缩缝装置",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "凹凸不平",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "略有凹凸不平",
+                        "explain": "差值≤1cm",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "有明显凹凸不平",
+                        "explain": "差值>1cm且≤3cm",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "严重凹凸不平",
+                        "explain": "差值> 3cm",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "心锚固区缺陷",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "锚固构件松动，或锚固螺栓松脱",
+                        "explain": "数量≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或混凝土轻微损坏，出现裂缝、剥落现象",
+                        "explain": "面积≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "锚固构件松动，或锚固螺栓松脱但功能尚存",
+                        "explain": "数量> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或混凝土局部损坏",
+                        "explain": "面积> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "锚固构件松动，或锚固螺栓松脱基本失效",
+                        "explain": "数量>20%",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或混凝土大面积破损",
+                        "explain": "面积> 20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "破损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "锚固构件松动、缺失，或焊缝开裂",
+                        "explain": "数量≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或橡胶条轻微损坏、老化",
+                        "explain": "面积≤20%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "或排水管发生轻微破损，但不影响功能",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "锚固构件松动、缺失，或焊缝开焊，造成钢板破损",
+                        "explain": "数量> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或橡胶条老化、剥离",
+                        "explain": "面积>20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或焊接处大部分出现裂缝，但未断裂",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "或防水材料老化并有局部脱落现象，或排水管破损、堵塞，尚能维持功能",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "严重老化，锚固构件松动、缺失，或焊缝开焊，造成钢板破损失效",
+                        "explain": "数量>20%",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或焊接处出现剪断现象，或钢板其他部位出现剪断现",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或橡胶条完全剥离或脱落",
+                        "explain": "无",
+                        "scale": 4
+                    },
+                    {
+                        "describe": "或防水材料老化完全脱落或排水",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 4,
+                "evaluateName": "失效",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "上层槽口堵塞、卡死等原因，造成伸缩缝伸缩异常，车辆行驶时出现冲击和噪声",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "上层槽口堵塞、卡死等原因，造成伸缩缝不能自由变形，伸缩异常现象严重，伸缩缝出现明显损坏",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "伸缩异常导致失效",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 20,
+        "componentName": "人行道",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "破损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "出现少量坑槽、孔洞、裂缝、剥落松动等现象",
+                        "explain": "面积≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "出现较多坑槽、孔洞、裂缝、剥落、松动等现象",
+                        "explain": "面积> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "出现大量坑槽、孔洞、裂缝、剥落、松动等现象",
+                        "explain": "面积> 20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "缺失",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "人行道出现少量缺失现象",
+                        "explain": "面积≤3%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "人行道出现较大面积缺损",
+                        "explain": "面积>3%且≤10%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "人行道出现大面积缺损",
+                        "explain": "面积> 10%",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 21,
+        "componentName": "栏杆、护栏",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "撞坏、 缺失",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部受到车辆冲撞，不影响功能，或构件脱落、缺失",
+                        "explain": "损坏长度≤3%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处出现车辆冲撞引起的损坏，不影响功能，或构件脱落、缺失",
+                        "explain": "损坏长度>3%且≤10%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "受到车辆冲撞，失去效用，或构件脱落缺失",
+                        "explain": "损坏长度> 10%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "破损",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "个别构件出现蜂窝麻面、剥落、锈蚀、裂缝、变形错位等现象",
+                        "explain": "累计面积≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较多构件出现蜂窝麻面剥落露筋、锈蚀、裂缝、变形错位等现象",
+                        "explain": "累计面积> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大量构件出现剥落露筋、锈蚀、裂缝、变形错位等现象",
+                        "explain": "累计面积> 20%",
+                        "scale": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 22,
+        "componentName": "排水系统",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "排水不畅",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "局部排水不畅，桥下出现漏水现象，或桥台支承面、翼墙面等平面受到污水污染",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "桥下多处出现漏水现象，或桥台支承面翼墙面、前墙面等平面受到污水污染，支座锈蚀，或桥台后填料排水不畅，造成路堤轻微沉降",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "桥下普遍出现漏水现象，或桥台支承面翼墙面、前墙面等平面被污水严重污染，支座严重锈蚀，或桥台后填料排水不畅，造成路堤明显沉降",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "泄水管、引水槽缺陷",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "较少泄水管、引水槽、排水孔出现堵塞，或排水设施构件破损、缺件、管体脱落、漏留泄水管",
+                        "explain": "数量≤5%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较多泄水管、引水槽、排水孔出现堵塞，或排水设施构件破损、缺件、管体脱落、漏留泄水管",
+                        "explain": "数量>5%",
+                        "scale": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "componentId": 23,
+        "componentName": "照明 、标志",
+        "children": [
+            {
+                "evaluateId": 1,
+                "evaluateName": "污损或损坏",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "个别设施松动、锈蚀损坏，或出现污损标志不清现象",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处设施松动、锈蚀、损坏，或出现污损标志不清现象",
+                        "explain": "无",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大部分设施松动、锈蚀损坏，危及行车安全",
+                        "explain": "无",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 2,
+                "evaluateName": "照明设施缺失",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "少量照明设施缺失",
+                        "explain": "数量≤10%",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "较多照明设施缺失",
+                        "explain": "数量> 10%且≤20%",
+                        "scale": 3
+                    },
+                    {
+                        "describe": "大量照明设施缺失，危及行车安全",
+                        "explain": "数量>20%",
+                        "scale": 4
+                    }
+                ]
+            },
+            {
+                "evaluateId": 3,
+                "evaluateName": "标志脱落、缺失",
+                "children": [
+                    {
+                        "describe": "完好",
+                        "explain": "无",
+                        "scale": 1
+                    },
+                    {
+                        "describe": "个别标志脱落、缺失，或需要标志的位置没有相应标志",
+                        "explain": "无",
+                        "scale": 2
+                    },
+                    {
+                        "describe": "多处标志脱落、缺失，或需要标志的位置没有相应标志",
+                        "explain": "无",
+                        "scale": 3
+                    }
+                ]
+            }
+        ]
+    }
+]

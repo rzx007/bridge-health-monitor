@@ -23,3 +23,12 @@ export const getUserList = (): Promise<any> => {
   const param = { account: sessionStorage.getItem('userName'), token: sessionStorage.getItem('token') }
   return http.get('http://183.66.148.62:5001/Home/GetUsers', param, { parallel: true })
 }
+
+// 查看任务结果
+export const getTaskResult = (params: { taskId: string }): Promise<any> => {
+  return http.post('/bridge/taskInfo/taskResult', params, { parallel: true })
+}
+// 查询任务检查结果问题详情
+export const getTaskResultDetail = (params: { taskId: string }): Promise<any> => {
+  return http.post('/bridge/taskInfo/taskProblem', params, { parallel: true })
+}
