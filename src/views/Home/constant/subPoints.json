@@ -1,0 +1,62 @@
+[
+  {
+    "maxLevel": 3,
+    "scale": 1,
+    "subPoint": 0
+  },
+  {
+    "maxLevel": 3,
+    "scale": 2,
+    "subPoint": 20
+  },
+  {
+    "maxLevel": 3,
+    "scale": 3,
+    "subPoint": 35
+  },
+  {
+    "maxLevel": 4,
+    "scale": 1,
+    "subPoint": 0
+  },
+  {
+    "maxLevel": 4,
+    "scale": 2,
+    "subPoint": 25
+  },
+  {
+    "maxLevel": 4,
+    "scale": 3,
+    "subPoint": 40
+  },
+  {
+    "maxLevel": 4,
+    "scale": 4,
+    "subPoint": 50
+  },
+  {
+    "maxLevel": 5,
+    "scale": 1,
+    "subPoint": 0
+  },
+  {
+    "maxLevel": 5,
+    "scale": 2,
+    "subPoint": 35
+  },
+  {
+    "maxLevel": 5,
+    "scale": 3,
+    "subPoint": 45
+  },
+  {
+    "maxLevel": 5,
+    "scale": 4,
+    "subPoint": 60
+  },
+  {
+    "maxLevel": 5,
+    "scale": 5,
+    "subPoint": 100
+  }
+]

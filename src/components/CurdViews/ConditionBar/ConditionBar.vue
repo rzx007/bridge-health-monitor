@@ -56,6 +56,7 @@
                 <el-select
                   v-model="fromData[item.name]"
                   :style="{ width: width }"
+                  :disabled="item.disabled"
                   :placeholder="usePlaceholder(item)"
                   collapse-tags
                   filterable

@@ -18,11 +18,11 @@
           <slot name="searchselect"></slot>
         </template>
       </lazy-tree> -->
-      <Tree :data-url="props.treeOptions.dataUrl" :search="props.treeOptions.search" @change-satus="triggerTree" @node-click="treeNodeClick">
+      <Tree v-bind="props.treeOptions" @change-satus="triggerTree" @node-click="treeNodeClick">
         <template #default="{ node, data }">
           <slot v-bind="{ node, data }">
             <i class="el-icon-folder"> </i>
-            <span>{{ node[props.treeOptions.treeProps['label']] }}</span>
+            <span>{{ data[props.treeOptions.treeProps['label']] }}</span>
           </slot>
         </template>
       </Tree>
@@ -52,29 +52,7 @@
       <div :class="{ boxShadow: tableOptions.mode !== 'simple' }">
         <CurdTable
           ref="tableView"
-          :highlight-current-row="tableOptions.highlightCurrentRow"
-          :columns="tableOptions.columns"
-          :lazy="tableOptions.lazy"
-          :export-url="tableOptions.exportUrl"
-          :data-url="tableOptions.dataUrl"
-          :limit="tableOptions.pageSize"
-          :is-private="tableOptions.isPrivate"
-          :params="tableOptions.params"
-          :height="tableOptions.height"
-          :row-key="tableOptions.rowKey"
-          :stripe="tableOptions.stripe"
-          :tree-props="tableOptions.treeProps"
-          :max-height="tableOptions.maxHeight"
-          :show-page="tableOptions.showPage"
-          :show-panel-tool="tableOptions.showPanelTool"
-          :mode="tableOptions.mode"
-          :default-panel="tableOptions.defaultPanel"
-          :border="tableOptions.border"
-          :show-summary="tableOptions.showSummary"
-          :summary-method="tableOptions.summaryMethod"
-          :span-method="tableOptions.spanMethod"
-          :show-setting-tool="tableOptions.showSettingTool"
-          :response-name="tableOptions.responseName"
+          v-bind="tableOptions"
           @row-click="rowClick"
           @row-dblclick="rowDblclick"
           @row-add="addRow"
@@ -108,7 +86,7 @@ import { CurdTable } from './CurdTable'
 import { ConditionBar } from './ConditionBar'
 import { emits } from './CurdTable/enums'
 import { reactive, ref } from 'vue'
-import { ItableProps, ItreeProps } from './type'
+import { IformItem, ItableProps, ItreeProps } from './type'
 
 const tableView = ref(null)
 const toggle = ref<boolean>(false)

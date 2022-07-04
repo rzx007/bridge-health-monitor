@@ -17,5 +17,6 @@ export const defaulltProps = {
   showSettingTool: true,
   showPanelTool: true,
   responseName: () => '',
+  beforeData: (data: any) => data,
   isPrivate: false
 }

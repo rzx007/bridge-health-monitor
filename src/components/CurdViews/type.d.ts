@@ -8,6 +8,7 @@ interface ItreeProps {
   defaultExpandAll?: boolean
   expandOnclickNode?: boolean
   resDataName?: string
+  httpMethod?: 'get' | 'post'
 }
 
 interface Icolumns {
@@ -38,7 +39,7 @@ interface Icolumns {
 }
 interface ItableProps {
   columns: Icolumns[]
-  tableData?: Array<any>
+  initData?: Array<any>
   tableSize?: string
   mode?: string
   defaultPanel?: Array<any>

@@ -21,7 +21,7 @@
           <template #default="{ node, data }">
             <slot v-bind="{ node, data }">
               <i class="el-icon-folder"> </i>
-              <span>{{ node[treeProps['label']] }}</span>
+              <span>{{ data[treeProps['label']] }}</span>
             </slot>
           </template>
         </el-tree>
@@ -43,6 +43,7 @@ const tree = ref(null)
 
 interface ItreeProp {
   dataUrl?: string
+  httpMethod?: 'get' | 'post'
   param?: { [x: string]: any }
   search?: boolean
   treeProps?: any
@@ -50,7 +51,7 @@ interface ItreeProp {
   expandOnclickNode?: boolean
   resDataName?: string
 }
-
+// @ts-ignore
 const props = withDefaults(defineProps<ItreeProp>(), { ...defaultProps })
 
 const emit = defineEmits(['changeSatus', 'nodeClick'])
@@ -59,11 +60,11 @@ const queryData = () => {
   if (props.dataUrl && !loading.value) {
     loading.value = true
     const params = Object.assign({}, props.param)
-    http
-      .get<{ code: number; data: { [x: string]: any } | Array<any> }>(props.dataUrl, params)
+    const method = props.httpMethod
+    http[method]<{ code: number; data: { [x: string]: any } | Array<any> }>(props.dataUrl, params)
       .then((res) => {
         loading.value = false
-        if (res.code === 1) {
+        if (res.code === 0) {
           treeData.value = res.data[props.resDataName]
         }
       })
@@ -76,11 +77,11 @@ const changeSatus = () => {
   toggle.value = !toggle.value
   emit('changeSatus', toggle.value) // 触发自定义事件
 }
-const filterNode = (value: any, data: { label: string | any[] }) => {
+const filterNode = (value: any, data: { [key: string]: string | any[] }) => {
   if (!value) {
     return true
   }
-  return data.label.indexOf(value) !== -1
+  return data[props.treeProps.label].indexOf(value) !== -1
 }
 const nodeClick = (data: any, node: any) => {
   emit('nodeClick', { data, node })

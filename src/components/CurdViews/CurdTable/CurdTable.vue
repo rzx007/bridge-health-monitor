@@ -196,6 +196,13 @@ watch(
     // queryData()
   }
 )
+watch(
+  () => props.initData,
+  (_curVal, _oldVal) => {
+    tableData.value = _curVal
+  },
+  { deep: true, immediate: true }
+)
 const toggleRowSelection = (rows: any) => {
   // @ts-ignore
   tableView.value.toggleRowSelection(rows)
@@ -211,7 +218,7 @@ defineExpose({
 })
 interface ItableProp {
   columns: Icolumns[]
-  tableData?: Array<any>
+  initData?: Array<any>
   tableSize?: string
   mode?: string
   defaultPanel?: Array<any>
@@ -234,6 +241,7 @@ interface ItableProp {
   showSummary?: boolean
   responseName?: string | Array<string>
   isPrivate?: boolean
+  beforeData?: (data: any) => any
   summaryMethod?: (value: any, row: { [x: string]: any }, column: { property: any }) => void
   spanMethod?: () => void
   rowKey?: string

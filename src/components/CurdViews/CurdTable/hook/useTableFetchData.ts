@@ -3,7 +3,7 @@ import { http } from '@/utils/http'
 import { defaultTableData } from '../enums'
 export function useTableFetchData(props, emit: (arg0: string, arg1: any[] | Ref<any[]>) => void, selection: Ref<any[]>) {
   const loading = ref<boolean>(false)
-  const tableData = ref<any[]>(defaultTableData)
+  const tableData = ref<any[]>()
   const pageParam = reactive<{ pageSize: number; pageNo: number }>({
     pageSize: 20,
     pageNo: 1
@@ -51,7 +51,8 @@ export function useTableFetchData(props, emit: (arg0: string, arg1: any[] | Ref<
                 item._disabled = 0
               })
             }
-            tableData.value = data
+            const newData = props.beforeData ? props.beforeData(data) : data
+            tableData.value = newData
             emit('getTableData', tableData)
           }
         })
