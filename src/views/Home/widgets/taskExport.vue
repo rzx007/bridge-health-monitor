@@ -30,7 +30,6 @@ import taskDetail from '@/views/Home/widgets/taskDetail.vue'
 import { IformItem, ItableProps } from '@/components/CurdViews/type'
 import { getUserList, getTaskResult, getTaskResultDetail } from '@/api'
 import { useTaskresult } from '../hooks/useTaskresult'
-
 const close = ref<boolean>(false)
 const close1 = ref<boolean>(false)
 const close2 = ref<boolean>(false)

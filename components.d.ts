@@ -10,7 +10,6 @@ declare module 'vue' {
     CurdViews: typeof import('./src/components/CurdViews/index.vue')['default']
     DataTable: typeof import('./src/components/CurdViews/DataTable/DataTable.vue')['default']
     EditTable: typeof import('./src/components/CurdViews/EditTable/index.vue')['default']
-    ElAlert: typeof import('element-plus/es')['ElAlert']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCheckbox: typeof import('element-plus/es')['ElCheckbox']
     ElCheckboxGroup: typeof import('element-plus/es')['ElCheckboxGroup']

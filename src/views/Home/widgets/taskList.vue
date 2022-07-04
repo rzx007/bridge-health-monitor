@@ -160,7 +160,6 @@ const getRow = (row) => {
 }
 
 const beforeSubmit = (params) => {
-  console.log(params)
   params.releaseUser = Number(sessionStorage.getItem('userId'))
   return params
 }

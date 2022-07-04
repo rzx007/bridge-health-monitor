@@ -33,6 +33,7 @@ export function useTableFetchData(props, emit: (arg0: string, arg1: any[] | Ref<
           loading.value = false
           if (res.code === 0) {
             let data = res.data
+            console.log(data)
             total.value = res.data.count
             if (props.responseName) {
               if (Array.isArray(props.responseName)) {
@@ -51,8 +52,10 @@ export function useTableFetchData(props, emit: (arg0: string, arg1: any[] | Ref<
                 item._disabled = 0
               })
             }
+            console.log(data)
             const newData = props.beforeData ? props.beforeData(data) : data
             tableData.value = newData
+            console.log(tableData.value)
             emit('getTableData', tableData)
           }
         })

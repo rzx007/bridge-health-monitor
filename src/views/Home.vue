@@ -1,5 +1,5 @@
 <template>
-  <el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
+  <el-tabs v-model="activeName" class="demo-tabs">
     <el-tab-pane label="巡检任务" name="first">
       <taskList></taskList>
     </el-tab-pane>
@@ -18,9 +18,5 @@ import type { TabsPaneContext } from 'element-plus'
 // console.log(flatToTreeData(data))
 
 const activeName = ref('first')
-
-const handleClick = (tab: TabsPaneContext, event: Event) => {
-  console.log(tab, event)
-}
 </script>
 <style></style>
