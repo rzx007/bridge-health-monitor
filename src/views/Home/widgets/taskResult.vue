@@ -7,7 +7,18 @@
         <el-tab-pane :label="'桥面系' + getCount(2)" name="2"></el-tab-pane>
       </el-tabs>
       <p class="midd">
-        巡检总分: <el-tag :type="taskItem?.score > 60 ? 'success' : 'danger'">{{ taskItem?.score }}</el-tag>
+        <span>
+          巡检总分: <el-tag :type="taskItem?.score > 60 ? 'success' : 'danger'">{{ taskItem?.score }}</el-tag>
+        </span>
+        <span v-show="activeName === '0'">
+          上部结构: <el-tag type="success">{{ taskItem?.topStructureScore }}</el-tag></span
+        >
+        <span v-show="activeName === '1'">
+          下部结构: <el-tag type="success">{{ taskItem?.bottomStructureScore }}</el-tag></span
+        >
+        <span v-show="activeName === '2'">
+          桥面系:<el-tag type="success">{{ taskItem?.bridgeStructureScore }}</el-tag>
+        </span>
       </p>
     </template>
     <template #oprated="{ row }">
@@ -50,11 +61,12 @@ const tableOptions = reactive<ItableProps>({
     { type: 'selection', width: 70, align: 'center' },
     { type: 'index', label: '序号', align: 'center', width: 80 },
     { prop: 'componentName', label: '构件名称', align: 'center', width: 180 },
+    { prop: 'componentNumber', label: '构件编号', align: 'center', width: 180 },
     { label: '检查项', prop: 'evaluateName', align: 'center' },
     { label: '扣分项', prop: 'describe', align: 'center' },
     { label: '扣分值', prop: 'subScore', align: 'center', width: 180 },
     { label: '实际完成日期', prop: 'overTime', align: 'center' },
-    { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
+    // { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
   ]
 })
 const treeOptions: ItreeProps = {
@@ -76,6 +88,8 @@ const getTaskResultDetailMethod = (taskId: string) => {
 const getTaskResultMethod = (taskId: string, data: any) => {
   getTaskResult({ taskId }).then((datas) => {
     const { resultList } = useTaskFloatresult(datas.data)
+    console.log(resultList);
+    
     const dataList = resultList
       .map((item: any) => {
         for (let index = 0; index < subPoint.length; index++) {
@@ -114,7 +128,6 @@ const treeNodeClick = ({ data, node }) => {
 const score = ref<number>(0)
 const lastTime = ref<string>('')
 getLastTaskResult().then((res) => {
-  console.log(res)
   score.value = res.data.score
   lastTime.value = res.data.overTime
 })

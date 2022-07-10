@@ -1,13 +1,6 @@
-/*
- * @Author: 阮志雄
- * @Date: 2022-07-03 12:59:25
- * @LastEditTime: 2022-07-04 22:03:12
- * @LastEditors: 阮志雄
- * @Description: In User Settings Edit
- * @FilePath: \bridge-health-monitor\src\views\Home\hooks\useTaskresult.ts
- */
-import datas from '../constant/components_options.json'
+ datas from '../constant/components_options.json'
 type taskType = {
+  componentNumber: any
   componentId: number
   componentName: string
   id: number
@@ -42,15 +35,16 @@ export const useTaskFloatresult = (taskData: Array<taskType>): any => {
   taskData.forEach((item: taskType) => {
     const checkArr = item.taskResult.split(',')
     const component = datas.find((data: any) => data.componentId === item.componentId)
-    const lastItemList = []
     checkArr.forEach((child: any, index: number) => {
       const { evaluateName } = component.children[index]
-      const result = component.children[index].children[Number(child) - 1]
-      lastItemList.push({ evaluateName, ...result })
+      // const result = component.children[index].children[Number(child) - 1]
+      const resultChild = component.children[index].children
+      const result = resultChild.filter((item: any) => item.scale === Number(child))[0]
       resultList.push({
         id: item.id,
         structureId: component.structureId,
         componentName: component.componentName,
+        componentNumber: item.componentNumber,
         taskId: item.taskId,
         evaluateName,
         ...result,

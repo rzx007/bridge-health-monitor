@@ -54,7 +54,7 @@ const tableOptions = reactive<ItableProps>({
   pageSize: 20,
   showPanelTool: true,
   defaultPanel: ['add'],
-  params: { state: '0' }, // params的改变都会触发，表格的重新查询
+  params: { state: '' }, // params的改变都会触发，表格的重新查询
   responseName: 'entities',
   dataUrl: '/bridge/taskInfo/taskList',
   columns: [
@@ -66,7 +66,7 @@ const tableOptions = reactive<ItableProps>({
     { label: '创建日期', prop: 'sendTime', align: 'center', width: 180 },
     { label: '计划完成日期', prop: 'planTime', align: 'center' },
     { label: '实际完成日期', prop: 'overTime', align: 'center' },
-    { label: '备注', prop: 'remark', align: 'center', width: 180, showOverflowTooltip: true },
+    { label: '备注', prop: 'remark', align: 'center', width: 180, showOverflowTooltip: true }
     // {
     //   label: '状态',
     //   prop: 'state',
@@ -88,7 +88,7 @@ const fromOptions = reactive<IformItem[]>([
     span: 6,
     type: 'select',
     clearable: true,
-    disabled: true,
+    // disabled: true,
     default: 0,
     options: [
       { label: '已发布', value: 0 },
@@ -179,14 +179,12 @@ function getUserListsMthod() {
   return getUserList().then((datas) => {
     const userId = Number(sessionStorage.getItem('userId'))
     let data = []
-    return (data = datas
-      .map((item) => {
-        return {
-          value: item['ID'],
-          label: item['USERNAME']
-        }
-      })
-      .filter((item) => item.value !== userId))
+    return (data = datas.map((item) => {
+      return {
+        value: item['ID'],
+        label: item['USERNAME']
+      }
+    }))
   })
 }
 getUserLists()
