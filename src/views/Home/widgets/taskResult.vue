@@ -1,5 +1,12 @@
 <template>
   <CurdView :table-options="tableOptions" :tree-options="treeOptions" :show-search-dynamic="false" @node-click="treeNodeClick">
+    <template #default="{ data }">
+      <div class="tree_list_tasks">
+        <el-icon> <Document /></el-icon>
+        <span>{{ data['title'] }}</span>
+        <el-icon style="margin-left: 160px" title="查看问题详情" @click.stop="getTaskResultDetailMethod(data.id)"><Link /></el-icon>
+      </div>
+    </template>
     <template #panel>
       <el-tabs v-model="activeName" type="card" class="demo-tabs" @tab-click="handleClick">
         <el-tab-pane :label="'上部结构' + getCount(0)" name="0"></el-tab-pane>
@@ -65,7 +72,7 @@ const tableOptions = reactive<ItableProps>({
     { label: '检查项', prop: 'evaluateName', align: 'center' },
     { label: '扣分项', prop: 'describe', align: 'center' },
     { label: '扣分值', prop: 'subScore', align: 'center', width: 180 },
-    { label: '实际完成日期', prop: 'overTime', align: 'center' },
+    { label: '实际完成日期', prop: 'overTime', align: 'center' }
     // { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
   ]
 })
@@ -88,8 +95,8 @@ const getTaskResultDetailMethod = (taskId: string) => {
 const getTaskResultMethod = (taskId: string, data: any) => {
   getTaskResult({ taskId }).then((datas) => {
     const { resultList } = useTaskFloatresult(datas.data)
-    console.log(resultList);
-    
+    console.log(resultList)
+
     const dataList = resultList
       .map((item: any) => {
         for (let index = 0; index < subPoint.length; index++) {
@@ -135,5 +142,11 @@ getLastTaskResult().then((res) => {
 <style lang="scss">
 .bridge_main {
   width: 100%;
+  .tree_list_tasks {
+    width: 100%;
+    .task_tree_right {
+      margin-left: 100px;
+    }
+  }
 }
 </style>

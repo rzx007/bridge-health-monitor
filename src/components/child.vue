@@ -1,3 +1,11 @@
+<!--
+ * @Author: 阮志雄
+ * @Date: 2022-06-30 22:15:47
+ * @LastEditTime: 2022-07-10 20:41:59
+ * @LastEditors: 阮志雄
+ * @Description: In User Settings Edit
+ * @FilePath: \bridge-health-monitor\src\components\child.vue
+-->
 <template>
   <div>
     <h1>{{ title }}</h1>

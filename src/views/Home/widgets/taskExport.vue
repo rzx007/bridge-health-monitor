@@ -77,14 +77,12 @@ const fromOptions = reactive<IformItem[]>([
       { label: '已发布', value: 0 },
       { label: '已完成', value: 1 }
     ]
+  },
+  {
+    name: 'taskId',
+    label: '任务编号',
+    type: 'input'
   }
-  // {
-  //   name: 'occurTime',
-  //   label: '日期',
-  //   span: 6,
-  //   type: 'date',
-  //   format: 'yyyy-MM-dd'
-  // }
 ])
 
 const rowAdd = () => {

@@ -76,9 +76,9 @@ const tableOptions = reactive<ItableProps>({
         { id: 0, value: '已发布' },
         { id: 1, value: '已完成', type: 'danger' }
       ]
-    },
-    { label: '得分', prop: 'score', align: 'center' },
-    { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
+    }
+    // { label: '得分', prop: 'score', align: 'center' },
+    // { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
   ]
 })
 const fromOptions = reactive<IformItem[]>([
@@ -94,14 +94,12 @@ const fromOptions = reactive<IformItem[]>([
       { label: '已发布', value: 0 },
       { label: '已完成', value: 1 }
     ]
+  },
+  {
+    name: 'taskId',
+    label: '任务编号',
+    type: 'input'
   }
-  // {
-  //   name: 'occurTime',
-  //   label: '日期',
-  //   span: 6,
-  //   type: 'date',
-  //   format: 'yyyy-MM-dd'
-  // }
 ])
 
 const fromDataOptions = {
