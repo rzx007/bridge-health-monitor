@@ -1,4 +1,4 @@
- datas from '../constant/components_options.json'
+import datas from '../constant/components_options.json'
 type taskType = {
   componentNumber: any
   componentId: number
