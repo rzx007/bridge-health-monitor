@@ -66,19 +66,19 @@ const tableOptions = reactive<ItableProps>({
     { label: '创建日期', prop: 'sendTime', align: 'center', width: 180 },
     { label: '计划完成日期', prop: 'planTime', align: 'center' },
     { label: '实际完成日期', prop: 'overTime', align: 'center' },
-    { label: '备注', prop: 'remark', align: 'center', width: 180, showOverflowTooltip: true }
-    // {
-    //   label: '状态',
-    //   prop: 'state',
-    //   width: 150,
-    //   align: 'center',
-    //   enum: [
-    //     { id: 0, value: '已发布' },
-    //     { id: 1, value: '已完成', type: 'danger' }
-    //   ]
-    // },
-    // { label: '得分', prop: 'score', align: 'center' },
-    // { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
+    { label: '备注', prop: 'remark', align: 'center', width: 180, showOverflowTooltip: true },
+    {
+      label: '状态',
+      prop: 'state',
+      width: 150,
+      align: 'center',
+      enum: [
+        { id: 0, value: '已发布' },
+        { id: 1, value: '已完成', type: 'danger' }
+      ]
+    },
+    { label: '得分', prop: 'score', align: 'center' },
+    { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
   ]
 })
 const fromOptions = reactive<IformItem[]>([

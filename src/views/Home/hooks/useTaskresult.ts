@@ -16,7 +16,9 @@ export const useTaskresult = (taskData: Array<taskType>): any => {
     const lastItemList = []
     checkArr.forEach((child: any, index: number) => {
       const { evaluateName } = component.children[index]
-      const result = component.children[index].children[Number(child) - 1]
+      // const result = component.children[index].children[Number(child) - 1]
+      const resultChild = component.children[index].children
+      const result = resultChild.filter((item: any) => item.scale === Number(child))[0]
       lastItemList.push({ evaluateName, ...result })
     })
     resultList.push({
