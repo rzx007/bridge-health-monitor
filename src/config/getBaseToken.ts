@@ -17,8 +17,8 @@ export const getBaseToken = () => {
   }
   const params = getUrlParamsToObj()
   if (!isEmptyObject(params)) {
-    sessionStorage.setItem('token', params.key)
-    sessionStorage.setItem('userId', params.uname)
+    sessionStorage.setItem('token', params['key'])
+    sessionStorage.setItem('userId', params['uname'])
     // sessionStorage.setItem('userName', params.UserName)
     return Promise.resolve(true)
   }

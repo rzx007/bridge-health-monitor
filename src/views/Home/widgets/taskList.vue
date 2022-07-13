@@ -53,6 +53,7 @@ const close2 = ref<boolean>(false)
 const tableOptions = reactive<ItableProps>({
   pageSize: 20,
   showPanelTool: true,
+  height: '68vh',
   defaultPanel: ['add'],
   params: { state: '' }, // params的改变都会触发，表格的重新查询
   responseName: 'entities',

@@ -31,12 +31,12 @@ console.log(route.fullPath)
   overflow: hidden;
   overflow-y: auto;
   position: relative;
+  box-sizing: border-box;
+  padding: 0 12px;
   // 路由动画
   .child-view {
-    position: absolute;
-    left: 0;
-    right: 0;
-    transition: all 0.8s cubic-bezier(0.55, 0, 0.1, 1);
+    height: 100%;
+    width: 100%;
   }
 }
 </style>

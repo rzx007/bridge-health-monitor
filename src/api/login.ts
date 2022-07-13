@@ -20,7 +20,7 @@ export const loginByyUsername = (params: { account: string; pwd: string }): Prom
 }
 // 获取用户列表
 export const getUserList = (): Promise<any> => {
-  const param = { account: sessionStorage.getItem('userId'), token: sessionStorage.getItem('key') }
+  const param = { account: sessionStorage.getItem('userId'), token: sessionStorage.getItem('token') }
   return http.get('http://183.66.148.62:5001/Home/GetUsers', param, { parallel: true })
 }
 
@@ -35,4 +35,8 @@ export const getTaskResultDetail = (params: { taskId: string }): Promise<any> =>
 // 最近一次任务检查结果
 export const getLastTaskResult = (): Promise<any> => {
   return http.post('/bridge/taskInfo/latelyTask')
+}
+// 导出文档
+export const exportDoc = (params: { taskId: string }): Promise<any> => {
+  return http.post('/bridge/taskInfo/exportDoc', params, { dowonload: true })
 }

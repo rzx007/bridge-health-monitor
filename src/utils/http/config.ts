@@ -1,6 +1,6 @@
 import { AxiosRequestConfig } from 'axios'
 
-export type RequestConfig = AxiosRequestConfig & { parallel?: boolean }
+export type RequestConfig = AxiosRequestConfig & { parallel?: boolean; dowonload?: boolean }
 
 export const defaultConfig: AxiosRequestConfig = {
   baseURL: import.meta.env.PROD ? window.api.baseUrl : '',

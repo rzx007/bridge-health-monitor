@@ -23,6 +23,7 @@ class FetchHttp {
   public sourceTokenList: Array<cancelTokenItem> = []
   // axios取消对象
   private CancelToken = axios.CancelToken as CancelTokenStatic
+  private isDownload = false
   // 本次请求的标识 和 取消函数
   private currentCabcelToken = ''
 
@@ -66,6 +67,9 @@ class FetchHttp {
           })
           this.cancelRepeatRequest()
         }
+        if (_config.dowonload) {
+          this.isDownload = true
+        }
 
         return _config
       },
@@ -84,7 +88,7 @@ class FetchHttp {
         const cancelKey = FetchHttp.setCancelTokenString(_config)
         this.deleteCancelTokenString(cancelKey)
         this.currentCabcelToken = ''
-        if (response.headers['content-disposition']) {
+        if (response.headers['content-disposition'] || this.isDownload) {
           //判断文件下载
           return response
         }

@@ -2,7 +2,7 @@
   <div>
     <CurdView :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd">
       <template #oprated="{ row }">
-        <el-button v-if="row.state === 1" type="text">导出</el-button>
+        <el-button v-if="row.state === 1" type="text" @click="exportRes(row.id)">导出</el-button>
         <el-button v-if="row.state === 1" type="text" @click="getTaskResultDetailMethod(row.id)">查看问题详情</el-button>
         <span v-else>-</span>
       </template>
@@ -28,7 +28,7 @@ import { reactive, ref } from 'vue'
 import Overlay from '@/components/Overlay/index.vue'
 import taskDetail from '@/views/Home/widgets/taskDetail.vue'
 import { IformItem, ItableProps } from '@/components/CurdViews/type'
-import { getUserList, getTaskResult, getTaskResultDetail } from '@/api'
+import { getUserList, getTaskResult, getTaskResultDetail, exportDoc } from '@/api'
 import { useTaskresult } from '../hooks/useTaskresult'
 const close = ref<boolean>(false)
 const close1 = ref<boolean>(false)
@@ -148,6 +148,24 @@ const getTaskResultDetailMethod = (taskId: string) => {
   getTaskResultDetail({ taskId }).then((datas) => {
     taskArr.value = datas.data
     close2.value = true
+  })
+}
+// 导出
+const exportRes = (taskId: string) => {
+  exportDoc({ taskId }).then((datas) => {
+    // window.open(datas.request.responseURL)
+    const blob = new Blob([datas.data], {
+      type: 'application/msword;charset=utf-8'
+    })
+    const downloadElement = document.createElement('a')
+    const href = window.URL.createObjectURL(blob)
+    downloadElement.style.display = 'none'
+    downloadElement.href = href
+
+    document.body.appendChild(downloadElement)
+    downloadElement.click() //点击下载
+    document.body.removeChild(downloadElement) //下载完成移除元素
+    window.URL.revokeObjectURL(href) //释放掉blob对象
   })
 }
 </script>
