@@ -15,12 +15,12 @@ export const getBaseToken = () => {
         return false
       })
   }
-  // const params = getUrlParamsToObj()
-  // if (!isEmptyObject(params)) {
-  //   sessionStorage.setItem('token', params.token)
-  //   sessionStorage.setItem('userId', params.usertId)
-  //   sessionStorage.setItem('userName', params.UserName)
-  //   return Promise.resolve(true)
-  // }
+  const params = getUrlParamsToObj()
+  if (!isEmptyObject(params)) {
+    sessionStorage.setItem('token', params.key)
+    sessionStorage.setItem('userId', params.uname)
+    // sessionStorage.setItem('userName', params.UserName)
+    return Promise.resolve(true)
+  }
   return Promise.resolve(true)
 }
