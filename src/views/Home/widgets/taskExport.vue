@@ -2,7 +2,7 @@
   <div>
     <CurdView :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd">
       <template #oprated="{ row }">
-        <el-button v-if="row.state === 1" type="text" @click="exportRes(row.id)">导出</el-button>
+        <el-button v-if="row.state === 1" type="text" @click="exportRes(row)">导出</el-button>
         <el-button v-if="row.state === 1" type="text" @click="getTaskResultDetailMethod(row.id)">查看问题详情</el-button>
         <span v-else>-</span>
       </template>
@@ -153,10 +153,9 @@ const getTaskResultDetailMethod = (taskId: string) => {
   })
 }
 // 导出
-const exportRes = (taskId: string) => {
-  exportDoc({ taskId }).then((datas) => {
-    console.log(datas)
-    fileDownload(datas.data, 'xxx.docx')
+const exportRes = (item: any) => {
+  exportDoc({ taskId: item.id }).then((datas) => {
+    fileDownload(datas.data, `${item.title}-巡检报表.docx`)
     // window.open(datas.request.responseURL)
     // const blob = new Blob(['\ufeff', datas.data], {
     //   type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document;charset=utf-8'
