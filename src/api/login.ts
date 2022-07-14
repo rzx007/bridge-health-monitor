@@ -38,5 +38,5 @@ export const getLastTaskResult = (): Promise<any> => {
 }
 // 导出文档
 export const exportDoc = (params: { taskId: string }): Promise<any> => {
-  return http.post('/bridge/taskInfo/exportDoc', params, { dowonload: true })
+  return http.post('/bridge/taskInfo/exportDoc', params, { responseType: 'arraybuffer', dowonload: true })
 }

@@ -122,7 +122,7 @@ const fromDataOptions = {
       label: '发起人',
       type: 'text',
       disabled: true,
-      default: sessionStorage.getItem('userName')
+      default: sessionStorage.getItem('userId')
     },
     {
       name: 'executeUser',

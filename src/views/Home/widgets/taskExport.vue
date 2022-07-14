@@ -30,6 +30,8 @@ import taskDetail from '@/views/Home/widgets/taskDetail.vue'
 import { IformItem, ItableProps } from '@/components/CurdViews/type'
 import { getUserList, getTaskResult, getTaskResultDetail, exportDoc } from '@/api'
 import { useTaskresult } from '../hooks/useTaskresult'
+import fileDownload from 'js-file-download'
+
 const close = ref<boolean>(false)
 const close1 = ref<boolean>(false)
 const close2 = ref<boolean>(false)
@@ -153,19 +155,21 @@ const getTaskResultDetailMethod = (taskId: string) => {
 // 导出
 const exportRes = (taskId: string) => {
   exportDoc({ taskId }).then((datas) => {
+    console.log(datas)
+    fileDownload(datas.data, 'xxx.docx')
     // window.open(datas.request.responseURL)
-    const blob = new Blob([datas.data], {
-      type: 'application/msword;charset=utf-8'
-    })
-    const downloadElement = document.createElement('a')
-    const href = window.URL.createObjectURL(blob)
-    downloadElement.style.display = 'none'
-    downloadElement.href = href
+    // const blob = new Blob(['\ufeff', datas.data], {
+    //   type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document;charset=utf-8'
+    // })
+    // const downloadElement = document.createElement('a')
+    // const href = window.URL.createObjectURL(blob)
+    // downloadElement.style.display = 'none'
+    // downloadElement.href = href
 
-    document.body.appendChild(downloadElement)
-    downloadElement.click() //点击下载
-    document.body.removeChild(downloadElement) //下载完成移除元素
-    window.URL.revokeObjectURL(href) //释放掉blob对象
+    // document.body.appendChild(downloadElement)
+    // downloadElement.click() //点击下载
+    // document.body.removeChild(downloadElement) //下载完成移除元素
+    // window.URL.revokeObjectURL(href) //释放掉blob对象
   })
 }
 </script>
