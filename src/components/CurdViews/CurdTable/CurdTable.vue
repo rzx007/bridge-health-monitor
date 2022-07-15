@@ -256,7 +256,7 @@ interface ItableProp {
   border-radius: 4px;
   .panel_tool_left {
     float: left;
-    color: #666;
+    @include font_color(null);
     font-size: 14px;
     padding-bottom: 8px;
   }

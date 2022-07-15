@@ -7,7 +7,7 @@ $theme-color: #3385ff;
 $font-color-theme: #9f9bd4; //字体主题颜色默认
 $font-color-theme1: #9f9bd4; //字体主题颜色1
 $font-color-theme2: #606266; //字体主题颜色2
-$font-color-theme3: #606266; //字体主题颜色3
+$font-color-theme3: #ebeceb; //字体主题颜色3
 $font-color-theme4: #b0b0b0; //字体次要主题颜色
 $font-color-theme5: #606266;
 
@@ -27,7 +27,7 @@ $sec-font-color-theme5: #d66a57;
   @return ($lightness);
 }
 
-@function background-color-theme3($lightness: hsl(210, 25%, 97%)) {
+@function background-color-theme3($lightness: hsl(228, 100%, 17%)) {
   @return ($lightness);
 }
 
@@ -42,7 +42,7 @@ $sec-font-color-theme5: #d66a57;
 // 二级背景色，工具栏，内容区域背景颜色
 $content-background1: #1f1d4e;
 $content-background2: #fff;
-$content-background3: #fff;
+$content-background3: #1f3878;
 $content-background4: #191919;
 $content-background5: #fff;
 
@@ -56,7 +56,7 @@ $sec-content-background5: #304155;
 // 工具栏顶部title条颜色
 $tool-bar-background1: #040227;
 $tool-bar-background2: #06998e;
-$tool-bar-background3: #001428;
+$tool-bar-background3: #3c6cd0;
 $tool-bar-background4: #323232;
 $tool-bar-background5: #2f3a4c;
 // border颜色
@@ -80,5 +80,30 @@ $box-shadow-theme5: 4px 4px 16px rgba(75, 102, 171, 0.2);
 }
 
 :root {
-  --el-color-primary: green;
+  --el-color-primary: #50b6f8;
+  --el-fill-color-blank: #37589b;
+  --el-text-color-primary: #e9e9e9;
+  --el-border-color: #19397c;
+  --el-text-color-regular: #e9e9e9;
+  --el-table-header-bg-color: #19397c;
+  --el-border-color-lighter: #19397c;
+  --el-bg-color-overlay: #37589b;
+  --el-border-color-light: #19397c;
+  --el-fill-color-light: #19397c;
+  --el-color-primary-light-9: #37589b;
+  --el-mask-color: #19397c;
+  --el-text-color-secondary: #e9e9e9;
+  --el-collapse-content-bg-color: #e9e9e9 !important;
+}
+.el-table th.el-table__cell {
+  background-image: linear-gradient(to bottom, #68b5eb, #3c89e0);
+}
+.el-table__header-wrapper tr th.el-table-fixed-column--left, .el-table__header-wrapper tr th.el-table-fixed-column--right {
+  background-image: linear-gradient(to bottom, #68b5eb, #3c89e0);
+}
+.el-tag {
+  border-color: transparent !important;
+}
+.el-collapse-item__wrap {
+  background-color: #223968 !important;
 }

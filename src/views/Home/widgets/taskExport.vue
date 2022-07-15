@@ -2,8 +2,8 @@
   <div>
     <CurdView :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd">
       <template #oprated="{ row }">
-        <el-button v-if="row.state === 1" type="text" @click="exportRes(row)">导出</el-button>
-        <el-button v-if="row.state === 1" type="text" @click="getTaskResultDetailMethod(row.id)">查看问题详情</el-button>
+        <el-button v-if="row.state === 1" @click="exportRes(row)">导出</el-button>
+        <el-button v-if="row.state === 1" @click="getTaskResultDetailMethod(row.id)">查看详情</el-button>
         <span v-else>-</span>
       </template>
       <template #releaseUser="{ row }">
@@ -64,22 +64,22 @@ const tableOptions = reactive<ItableProps>({
       ]
     },
     { label: '得分', prop: 'score', align: 'center' },
-    { label: '操作', slot: 'oprated', width: 150, align: 'center', fixed: 'right' }
+    { label: '操作', slot: 'oprated', width: 210, align: 'center' }
   ]
 })
 const fromOptions = reactive<IformItem[]>([
-  {
-    name: 'state',
-    label: '任务状态',
-    span: 6,
-    type: 'select',
-    clearable: true,
-    disabled: true,
-    options: [
-      { label: '已发布', value: 0 },
-      { label: '已完成', value: 1 }
-    ]
-  },
+  // {
+  //   name: 'state',
+  //   label: '任务状态',
+  //   span: 6,
+  //   type: 'select',
+  //   clearable: true,
+  //   disabled: true,
+  //   options: [
+  //     { label: '已发布', value: 0 },
+  //     { label: '已完成', value: 1 }
+  //   ]
+  // },
   {
     name: 'taskId',
     label: '任务编号',
