@@ -44,14 +44,15 @@ const tableOptions = reactive<ItableProps>({
   responseName: 'entities',
   dataUrl: '/bridge/taskInfo/taskList',
   columns: [
-    { type: 'selection', width: 70, align: 'center' },
+    // { type: 'selection', width: 70, align: 'center' },
     { type: 'index', label: '序号', align: 'center', width: 80 },
     { prop: 'title', label: '计划名称', align: 'center', width: 180 },
+    { prop: 'id', label: '任务编号', align: 'center', width: 180 },
     { label: '发起人', slot: 'releaseUser', align: 'center' },
     { label: '执行人', slot: 'executeUser', align: 'center' },
     { label: '创建日期', prop: 'sendTime', align: 'center', width: 180 },
-    { label: '计划完成日期', prop: 'planTime', align: 'center' },
-    { label: '实际完成日期', prop: 'overTime', align: 'center' },
+    { label: '计划完成日期', prop: 'planTime', align: 'center', width: 180 },
+    { label: '实际完成日期', prop: 'overTime', align: 'center', width: 180 },
     { label: '备注', prop: 'remark', align: 'center', width: 180, showOverflowTooltip: true },
     {
       label: '状态',

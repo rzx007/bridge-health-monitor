@@ -20,7 +20,7 @@ export const loginByyUsername = (params: { account: string; pwd: string }): Prom
 }
 // 获取用户列表
 export const getUserList = (): Promise<any> => {
-  const param = { account: sessionStorage.getItem('userId'), token: sessionStorage.getItem('token') }
+  const param = { account: sessionStorage.getItem('userName'), token: sessionStorage.getItem('token') }
   return http.get('http://183.66.148.62:5001/Home/GetUsers', param, { parallel: true })
 }
 

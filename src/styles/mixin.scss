@@ -54,7 +54,7 @@
 // 斑马纹
 @mixin striped-background() {
   [data-theme='theme1'] & {
-    background-color: background-color-theme1(hsl(242, 46%, 21%));
+    background-color: background-color-theme1(hsl(220, 67%, 41%));
   }
 
   [data-theme='theme2'] & {
@@ -62,7 +62,7 @@
   }
 
   [data-theme='theme3'] & {
-    background-color: background-color-theme3();
+    background-color: background-color-theme3(hsl(220, 67%, 41%));
   }
 
   [data-theme='theme4'] & {

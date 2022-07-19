@@ -65,7 +65,7 @@ const tableOptions = reactive<ItableProps>({
   rowKey: 'evaluateName',
   defaultPanel: [],
   columns: [
-    { type: 'selection', width: 70, align: 'center' },
+    // { type: 'selection', width: 70, align: 'center' },
     { type: 'index', label: '序号', align: 'center', width: 80 },
     { prop: 'componentName', label: '构件名称', align: 'center', width: 180 },
     { prop: 'componentNumber', label: '构件编号', align: 'center', width: 180 },
