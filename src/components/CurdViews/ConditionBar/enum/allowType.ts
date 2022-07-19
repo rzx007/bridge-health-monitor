@@ -9,6 +9,7 @@ export const allowType = [
   'timerange',
   'input',
   'text',
+  'number',
   'radio',
   'checkbox',
   'select',

@@ -113,7 +113,7 @@
             <template v-else>
               <div :ref="setItemRef" class="curd_tool_item">
                 <label v-if="mode !== 'simple'" class="label">{{ item.label }}：</label>
-                <el-input v-model="fromData[item.name]" :style="{ width: width }" :placeholder="usePlaceholder(item)"></el-input>
+                <el-input v-model="fromData[item.name]" :style="{ width: width }" :placeholder="usePlaceholder(item)" :type="item.type"></el-input>
               </div>
             </template>
           </template>

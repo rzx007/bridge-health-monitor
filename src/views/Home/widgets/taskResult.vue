@@ -4,7 +4,7 @@
       <div class="tree_list_tasks">
         <el-icon> <Document /></el-icon>
         <span>{{ data['title'] }}</span>
-        <el-icon style="margin-left: 160px" title="查看问题详情" @click.stop="getTaskResultDetailMethod(data.id)"><Link /></el-icon>
+        <el-icon style="margin-left: 130px" title="查看问题详情" @click.stop="getTaskResultDetailMethod(data.id)"><Link /></el-icon>
       </div>
     </template>
     <template #panel>

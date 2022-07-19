@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CurdView :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd">
+    <CurdView ref="tableView" :table-options="tableOptions" :from-options="fromOptions" @selection-change="selectionChange" @row-add="rowAdd">
       <template #ltool>
         <div class="panel_content">
           <span class="right" style="display: inline-block">
@@ -26,7 +26,7 @@
       </template>
     </CurdView>
     <Overlay v-model="close" title="添加巡检计划">
-      <FormData v-bind="fromDataOptions" :before-submit="beforeSubmit" @submit="close = false"></FormData>
+      <FormData v-bind="fromDataOptions" :before-submit="beforeSubmit" @submit="afterSubmit()"></FormData>
     </Overlay>
     <Overlay v-model="close1" title="结果展示" oheight="80vh">
       <ResultList :data="resultArr" :default-props="{ title: 'componentName', label: 'evaluateName', value: 'describe' }"></ResultList>
@@ -46,6 +46,7 @@ import { IformItem, ItableProps } from '@/components/CurdViews/type'
 import { getUserList, getTaskResult, getTaskResultDetail, getLastTaskResult } from '@/api'
 import { useTaskresult } from '../hooks/useTaskresult'
 
+const tableView = ref(null)
 const close = ref<boolean>(false)
 const close1 = ref<boolean>(false)
 const close2 = ref<boolean>(false)
@@ -100,7 +101,7 @@ const fromOptions = reactive<IformItem[]>([
   {
     name: 'taskId',
     label: '任务编号',
-    type: 'input'
+    type: 'number'
   }
 ])
 
@@ -158,7 +159,10 @@ const selectionChange = (selection) => {
 const getRow = (row) => {
   console.log(row)
 }
-
+const afterSubmit = (res) => {
+  tableView.value.refresh()
+  close.value = false
+}
 const beforeSubmit = (params) => {
   params.releaseUser = Number(sessionStorage.getItem('userId'))
   return params

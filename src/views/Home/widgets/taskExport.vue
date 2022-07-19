@@ -84,7 +84,7 @@ const fromOptions = reactive<IformItem[]>([
   {
     name: 'taskId',
     label: '任务编号',
-    type: 'input'
+    type: 'number'
   }
 ])
 

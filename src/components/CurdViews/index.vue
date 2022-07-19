@@ -132,10 +132,7 @@ const toggleAllSelection = () => {
   // 全选
   tableView.value.toggleAllSelection()
 }
-defineExpose({
-  toggleRowSelection,
-  toggleAllSelection
-})
+
 const handleCurrentChange = (row) => {
   emit('current-change', row)
 }
@@ -204,6 +201,11 @@ const tabClick = (val) => {
 }
 getSlot()
 getHeaderSlot()
+defineExpose({
+  refresh,
+  toggleRowSelection,
+  toggleAllSelection
+})
 </script>
 <style lang="scss">
 .curd_view {
